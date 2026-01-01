@@ -31,7 +31,7 @@ export const HeroSection = () => {
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium text-foreground mb-6 leading-[1.1] tracking-tight">
             Trips Designed,
             <br />
-            <span className="text-primary">Not Just Booked.</span>
+            <span className="font-script italic text-primary">Not Just Booked.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">

@@ -33,8 +33,9 @@ export const Navigation = () => {
       }`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-serif text-2xl font-medium text-foreground tracking-tight">
-          Sam Makes Plans
+        <a href="#" className="flex items-baseline gap-1 text-2xl tracking-tight">
+          <span className="font-serif font-medium text-foreground">Sam Makes</span>
+          <span className="font-script text-primary italic">plans</span>
         </a>
 
         {/* Desktop Navigation */}

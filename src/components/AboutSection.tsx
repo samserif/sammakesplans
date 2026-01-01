@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Plane, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import samProfile from "@/assets/sam-profile.png";
+import samHeadshot from "@/assets/sam-headshot.png";
 
 const stats = [
   { icon: Plane, value: "41", label: "Countries Explored" },
@@ -24,8 +24,8 @@ export const AboutSection = () => {
           >
             <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0">
               <img
-                src={samProfile}
-                alt="Samantha Provenza - Travel Advisor"
+                src={samHeadshot}
+                alt="Samantha Provenza - Travel Advisor in Egypt"
                 className="w-full h-full object-cover object-top rounded-lg shadow-medium"
               />
               {/* Decorative element */}
