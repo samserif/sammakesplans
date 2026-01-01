@@ -30,7 +30,7 @@ const steps = [
 
 export const ProcessSection = () => {
   return (
-    <section id="process" className="py-24 md:py-32 bg-background">
+    <section id="process" className="py-24 md:py-32 bg-background" aria-labelledby="process-heading" role="region">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ export const ProcessSection = () => {
           className="text-center mb-16 md:mb-20"
         >
           <span className="text-sm uppercase tracking-widest text-primary font-medium">Process</span>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mt-4 mb-6">
+          <h2 id="process-heading" className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mt-4 mb-6">
             How I Work
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -50,8 +50,8 @@ export const ProcessSection = () => {
 
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 relative">
-            {/* Connecting Line (desktop only) */}
-            <div className="hidden lg:block absolute top-16 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            {/* Connecting Line (desktop only) - decorative */}
+            <div className="hidden lg:block absolute top-16 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-border to-transparent" aria-hidden="true" />
 
             {steps.map((step, index) => (
               <motion.div
@@ -64,10 +64,10 @@ export const ProcessSection = () => {
               >
                 {/* Step Number & Icon */}
                 <div className="relative inline-flex flex-col items-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-cream-dark flex items-center justify-center mb-3 relative z-10 shadow-soft">
-                    <step.icon className="w-7 h-7 text-primary" />
+                  <div className="w-16 h-16 rounded-full bg-cream-dark flex items-center justify-center mb-3 relative z-10 shadow-soft" aria-hidden="true">
+                    <step.icon className="w-7 h-7 text-primary" aria-hidden="true" />
                   </div>
-                  <span className="text-5xl font-serif font-medium text-cream-dark absolute -top-2 -right-6 select-none">
+                  <span className="text-5xl font-serif font-medium text-cream-dark absolute -top-2 -right-6 select-none" aria-hidden="true">
                     {step.number}
                   </span>
                 </div>
