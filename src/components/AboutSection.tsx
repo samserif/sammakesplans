@@ -11,7 +11,7 @@ const stats = [
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-cream-dark overflow-hidden">
+    <section id="about" className="py-24 md:py-32 bg-cream-dark overflow-hidden" aria-labelledby="about-heading" role="region">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
@@ -28,9 +28,9 @@ export const AboutSection = () => {
                 alt="Samantha Provenza - Travel Advisor in Egypt"
                 className="w-full h-full object-cover object-top rounded-lg shadow-medium"
               />
-              {/* Decorative element */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-lg -z-10" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-primary/20 rounded-lg -z-10" />
+              {/* Decorative elements */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-lg -z-10" aria-hidden="true" />
+              <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-primary/20 rounded-lg -z-10" aria-hidden="true" />
             </div>
           </motion.div>
 
@@ -42,7 +42,7 @@ export const AboutSection = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="text-sm uppercase tracking-widest text-primary font-medium">About</span>
-            <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mt-4 mb-6">
+            <h2 id="about-heading" className="font-serif text-4xl md:text-5xl font-medium text-foreground mt-4 mb-6">
               Samantha Provenza
             </h2>
 
@@ -59,11 +59,11 @@ export const AboutSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-3 gap-4 mb-8" role="list" aria-label="Experience statistics">
               {stats.map((stat) => (
-                <div key={stat.label} className="text-center p-4 bg-background rounded-lg shadow-soft">
-                  <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" />
-                  <span className="block font-serif text-2xl font-medium text-foreground">{stat.value}</span>
+                <div key={stat.label} className="text-center p-4 bg-background rounded-lg shadow-soft" role="listitem">
+                  <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" aria-hidden="true" />
+                  <span className="block font-serif text-2xl font-medium text-foreground" aria-label={`${stat.value} ${stat.label}`}>{stat.value}</span>
                   <span className="text-xs text-muted-foreground">{stat.label}</span>
                 </div>
               ))}

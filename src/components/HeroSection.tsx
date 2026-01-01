@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-travel.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" aria-labelledby="hero-heading">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -28,7 +28,7 @@ export const HeroSection = () => {
             Fora Advanced Certified Advisor
           </span>
 
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium text-foreground mb-6 leading-[1.1] tracking-tight">
+          <h1 id="hero-heading" className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium text-foreground mb-6 leading-[1.1] tracking-tight">
             Trips Designed,
             <br />
             <span className="font-script italic text-primary">Not Just Booked.</span>
@@ -64,9 +64,10 @@ export const HeroSection = () => {
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="Scroll down to services section"
           >
-            <span className="text-xs uppercase tracking-widest">Explore</span>
-            <ArrowDown size={20} />
+            <span className="text-xs uppercase tracking-widest" aria-hidden="true">Explore</span>
+            <ArrowDown size={20} aria-hidden="true" />
           </motion.a>
         </motion.div>
       </div>

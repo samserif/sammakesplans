@@ -55,7 +55,7 @@ const itemVariants = {
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 md:py-32 bg-cream-dark">
+    <section id="services" className="py-24 md:py-32 bg-cream-dark" aria-labelledby="services-heading" role="region">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ export const ServicesSection = () => {
           className="text-center mb-16"
         >
           <span className="text-sm uppercase tracking-widest text-primary font-medium">Services</span>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mt-4 mb-6">
+          <h2 id="services-heading" className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mt-4 mb-6">
             Levels of Engagement
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -99,8 +99,8 @@ export const ServicesSection = () => {
               <div className="flex items-center gap-3 mb-6">
                 <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
                   service.featured ? "bg-primary text-primary-foreground" : "bg-secondary text-foreground"
-                }`}>
-                  <service.icon size={24} />
+                }`} aria-hidden="true">
+                  <service.icon size={24} aria-hidden="true" />
                 </div>
                 <div>
                   <span className="text-xs uppercase tracking-widest text-muted-foreground">{service.tier}</span>
@@ -120,7 +120,7 @@ export const ServicesSection = () => {
                 <ul className="mt-3 space-y-2">
                   {service.inclusions.map((item) => (
                     <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" aria-hidden="true" />
                       {item}
                     </li>
                   ))}

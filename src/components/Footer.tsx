@@ -4,7 +4,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 bg-background border-t border-border">
+    <footer className="py-12 bg-background border-t border-border" role="contentinfo">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
@@ -18,7 +18,7 @@ export const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-8">
+          <nav className="flex items-center gap-8" aria-label="Footer navigation">
             <a
               href="#services"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -42,11 +42,11 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Instagram"
+              aria-label="Follow on Instagram (opens in new tab)"
             >
-              <Instagram size={20} />
+              <Instagram size={20} aria-hidden="true" />
             </a>
-          </div>
+          </nav>
         </div>
 
         {/* Bottom */}
