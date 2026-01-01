@@ -16,9 +16,9 @@
     --popover: 40 30% 96%;
     --popover-foreground: 30 10% 15%;
 
-    /* Terracotta accent */
-    --primary: 16 60% 50%;
-    --primary-foreground: 40 30% 98%;
+    /* Lime green accent */
+    --primary: 82 85% 55%;
+    --primary-foreground: 30 10% 15%;
 
     --secondary: 40 20% 90%;
     --secondary-foreground: 30 10% 20%;
@@ -26,24 +26,24 @@
     --muted: 40 15% 88%;
     --muted-foreground: 30 8% 45%;
 
-    --accent: 16 45% 55%;
-    --accent-foreground: 40 30% 98%;
+    --accent: 82 80% 60%;
+    --accent-foreground: 30 10% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 35 20% 85%;
     --input: 35 20% 85%;
-    --ring: 16 60% 50%;
+    --ring: 82 85% 55%;
 
     --radius: 0.375rem;
 
     /* Custom tokens */
     --cream: 40 35% 93%;
     --cream-dark: 38 25% 88%;
-    --terracotta: 16 60% 50%;
-    --terracotta-light: 16 55% 65%;
-    --terracotta-dark: 16 65% 40%;
+    --lime: 82 85% 55%;
+    --lime-light: 82 80% 65%;
+    --lime-dark: 82 90% 45%;
     --charcoal: 30 10% 15%;
     --warm-gray: 30 5% 55%;
 
@@ -54,7 +54,7 @@
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(30 10% 15% / 0.08);
     --shadow-medium: 0 8px 30px -8px hsl(30 10% 15% / 0.12);
-    --shadow-glow: 0 0 40px hsl(16 60% 50% / 0.15);
+    --shadow-glow: 0 0 40px hsl(82 85% 55% / 0.25);
 
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,7 +71,7 @@
     --popover: 30 15% 10%;
     --popover-foreground: 40 25% 92%;
 
-    --primary: 16 55% 55%;
+    --primary: 82 80% 55%;
     --primary-foreground: 30 15% 10%;
 
     --secondary: 30 10% 18%;
@@ -80,18 +80,18 @@
     --muted: 30 10% 20%;
     --muted-foreground: 35 10% 60%;
 
-    --accent: 16 50% 60%;
+    --accent: 82 75% 60%;
     --accent-foreground: 30 15% 10%;
 
     --border: 30 10% 22%;
     --input: 30 10% 22%;
-    --ring: 16 55% 55%;
+    --ring: 82 80% 55%;
 
     --cream: 30 12% 14%;
     --cream-dark: 30 10% 18%;
-    --terracotta: 16 55% 55%;
-    --terracotta-light: 16 50% 65%;
-    --terracotta-dark: 16 60% 45%;
+    --lime: 82 80% 55%;
+    --lime-light: 82 75% 65%;
+    --lime-dark: 82 85% 45%;
     --charcoal: 40 20% 88%;
     --warm-gray: 35 8% 55%;
   }
@@ -138,12 +138,12 @@
     background-color: hsl(var(--cream-dark));
   }
 
-  .text-terracotta {
-    color: hsl(var(--terracotta));
+  .text-lime {
+    color: hsl(var(--lime));
   }
 
-  .bg-terracotta {
-    background-color: hsl(var(--terracotta));
+  .bg-lime {
+    background-color: hsl(var(--lime));
   }
 
   .text-charcoal {
@@ -170,7 +170,12 @@
     transition: var(--transition-smooth);
   }
 
-  .gradient-terracotta {
-    background: linear-gradient(135deg, hsl(var(--terracotta)) 0%, hsl(var(--terracotta-dark)) 100%);
+  .gradient-lime {
+    background: linear-gradient(135deg, hsl(var(--lime)) 0%, hsl(var(--lime-dark)) 100%);
+  }
+
+  .font-script {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
   }
 }
