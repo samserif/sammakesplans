@@ -1,19 +1,31 @@
 import { motion } from "framer-motion";
 import { MapPin, Plane, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import samHeadshot from "@/assets/sam-headshot.png";
 
 const stats = [
-  { icon: Plane, value: "41", label: "Countries Explored" },
-  { icon: MapPin, value: "∞", label: "Tattoo Souvenirs" },
-  { icon: Users, value: "100+", label: "Groups Designed" },
+  { icon: Plane, value: "43", label: "Countries Explored" },
+  { icon: MapPin, value: "10+", label: "Years in NYC" },
+  { icon: Users, value: "100+", label: "Groups Planned" },
 ];
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-cream-dark overflow-hidden" aria-labelledby="about-heading" role="region">
+    <section id="story" className="py-24 md:py-32 bg-background" aria-labelledby="about-heading" role="region">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <span className="text-sm uppercase tracking-widest text-accent font-semibold font-display">My Story</span>
+          <h2 id="about-heading" className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mt-4 mb-4 uppercase">
+            Why Sam?
+          </h2>
+        </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -25,12 +37,11 @@ export const AboutSection = () => {
             <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0">
               <img
                 src={samHeadshot}
-                alt="Samantha Provenza - Travel Advisor in Egypt"
+                alt="Samantha Provenza - Travel Advisor"
                 className="w-full h-full object-cover object-top rounded-lg shadow-medium"
               />
-              {/* Decorative elements */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-lg -z-10" aria-hidden="true" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-primary/20 rounded-lg -z-10" aria-hidden="true" />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-lg -z-10" aria-hidden="true" />
+              <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-accent/20 rounded-lg -z-10" aria-hidden="true" />
             </div>
           </motion.div>
 
@@ -41,39 +52,32 @@ export const AboutSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-sm uppercase tracking-widest text-primary font-medium">About</span>
-            <h2 id="about-heading" className="font-serif text-4xl md:text-5xl font-medium text-foreground mt-4 mb-6">
-              Samantha Provenza
-            </h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed mb-8 font-sans">
+              <p>
+                I've lived in NYC for 10 years and explored 43 countries. In my "other life" in tech, I build products that are easy for people to use. I realized travel should be the same way.
+              </p>
+              <p>
+                Most group trips are stressful because the logistics don't match the dream. I started Sam Makes Plans to bridge that gap. I combine my obsession for detail with my deep connections in the travel industry to design seamless adventures for "experience junkies" who want hidden gems, not just tourist traps.
+              </p>
+            </div>
 
-            <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
-              <p>
-                I'm a UX designer turned travel advisor, now a Fora Advanced Certified Advisor specializing in group travel. What started as a passion for exploring has evolved into a design practice for the world of travel.
-              </p>
-              <p>
-                After 41 countries—many of which have left their mark on me in the form of tattoos—I've learned what makes group travel actually work. I'm also part of a digital nomad community, which means I understand the nuances of coordinating across time zones and lifestyles.
-              </p>
-              <p className="font-medium text-foreground">
-                My mission? Making group travel stress-free, beautifully designed, and genuinely memorable.
+            {/* Handwritten note */}
+            <div className="mb-8 p-4 bg-mustard/10 border-l-4 border-mustard rounded-r-lg">
+              <p className="font-script text-xl text-mustard">
+                "I save my clients an average of 40+ hours of planning time."
               </p>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mb-8" role="list" aria-label="Experience statistics">
+            <div className="grid grid-cols-3 gap-4" role="list" aria-label="Experience statistics">
               {stats.map((stat) => (
-                <div key={stat.label} className="text-center p-4 bg-background rounded-lg shadow-soft" role="listitem">
-                  <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" aria-hidden="true" />
-                  <span className="block font-serif text-2xl font-medium text-foreground" aria-label={`${stat.value} ${stat.label}`}>{stat.value}</span>
-                  <span className="text-xs text-muted-foreground">{stat.label}</span>
+                <div key={stat.label} className="text-center p-4 bg-cream-dark rounded-lg" role="listitem">
+                  <stat.icon className="w-5 h-5 text-accent mx-auto mb-2" aria-hidden="true" />
+                  <span className="block font-display text-2xl font-extrabold text-foreground" aria-label={`${stat.value} ${stat.label}`}>{stat.value}</span>
+                  <span className="text-xs text-muted-foreground font-sans">{stat.label}</span>
                 </div>
               ))}
             </div>
-
-            <Button variant="hero" size="lg" asChild>
-              <a href="https://www.foratravel.com/advisor/samantha-provenza" target="_blank" rel="noopener noreferrer">
-                Let's Plan Your Trip
-              </a>
-            </Button>
           </motion.div>
         </div>
       </div>
