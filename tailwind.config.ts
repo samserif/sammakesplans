@@ -49,15 +49,26 @@ export default {
         },
         cream: "hsl(var(--cream))",
         "cream-dark": "hsl(var(--cream-dark))",
-        terracotta: "hsl(var(--terracotta))",
-        "terracotta-light": "hsl(var(--terracotta-light))",
-        "terracotta-dark": "hsl(var(--terracotta-dark))",
+        teal: {
+          DEFAULT: "hsl(var(--teal))",
+          light: "hsl(var(--teal-light))",
+        },
+        terracotta: {
+          DEFAULT: "hsl(var(--terracotta))",
+          light: "hsl(var(--terracotta-light))",
+          dark: "hsl(var(--terracotta-dark))",
+        },
+        mustard: {
+          DEFAULT: "hsl(var(--mustard))",
+          light: "hsl(var(--mustard-light))",
+        },
         charcoal: "hsl(var(--charcoal))",
         "warm-gray": "hsl(var(--warm-gray))",
       },
       fontFamily: {
-        serif: ["Cormorant Garamond", "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        display: ["Montserrat", "system-ui", "sans-serif"],
+        sans: ["Poppins", "system-ui", "sans-serif"],
+        script: ["Dancing Script", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -81,22 +92,12 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
-        "slide-in-left": {
-          "0%": { opacity: "0", transform: "translateX(-30px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
-        },
-        "slide-in-right": {
-          "0%": { opacity: "0", transform: "translateX(30px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.8s ease-out forwards",
         "fade-in": "fade-in 0.6s ease-out forwards",
-        "slide-in-left": "slide-in-left 0.8s ease-out forwards",
-        "slide-in-right": "slide-in-right 0.8s ease-out forwards",
       },
       boxShadow: {
         soft: "var(--shadow-soft)",

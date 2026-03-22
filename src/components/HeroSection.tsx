@@ -10,10 +10,10 @@ export const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Luxury Mediterranean coastline at golden hour"
+          alt="Group of travelers enjoying a scenic destination together"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/30 to-background" />
       </div>
 
       {/* Content */}
@@ -22,29 +22,25 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-5xl mx-auto"
         >
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-8 backdrop-blur-sm">
-            Fora Advanced Certified Advisor
-          </span>
-
-          <h1 id="hero-heading" className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium text-foreground mb-6 leading-[1.1] tracking-tight">
-            Trips Designed,
+          <h1 id="hero-heading" className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold text-primary-foreground mb-6 leading-[1.05] tracking-tight uppercase">
+            Stop "Winging"
             <br />
-            <span className="font-script italic text-primary">Not Just Booked.</span>
+            Your Group Trips.
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            I apply UX principles to the world of international travel. From multi-city logistics to private villa buy-outs, I design friction-free journeys for creative leaders and high-impact groups.
+          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
+            Bespoke adventure and celebration travel for groups of 6+. I handle the complex logistics and VIP details so you can actually enjoy the destination.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="xl" asChild>
               <a href="https://www.foratravel.com/advisor/samantha-provenza" target="_blank" rel="noopener noreferrer">
-                Start Planning
+                Start Your Trip Inquiry
               </a>
             </Button>
-            <Button variant="hero-outline" size="xl" asChild>
+            <Button variant="hero-outline" size="xl" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
               <a href="#services">
                 View Services
               </a>
@@ -60,13 +56,13 @@ export const HeroSection = () => {
           className="absolute bottom-10 left-1/2 -translate-x-1/2"
         >
           <motion.a
-            href="#services"
+            href="#story"
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="Scroll down to services section"
+            className="flex flex-col items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            aria-label="Scroll down to learn more"
           >
-            <span className="text-xs uppercase tracking-widest" aria-hidden="true">Explore</span>
+            <span className="text-xs uppercase tracking-widest font-display font-semibold" aria-hidden="true">Explore</span>
             <ArrowDown size={20} aria-hidden="true" />
           </motion.a>
         </motion.div>
