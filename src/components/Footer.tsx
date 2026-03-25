@@ -25,7 +25,7 @@ export const Footer = () => {
         <div className="border-t border-primary-foreground/15 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <a href="#" className="font-display text-lg font-extrabold text-primary-foreground uppercase">
-              Sam Makes <span className="font-script text-accent text-xl normal-case">plans</span>
+              Sam Makes <span className="font-script text-mustard text-xl normal-case">plans</span>
             </a>
             <p className="text-sm text-primary-foreground/50 mt-1 font-sans">
               Powered by{" "}
@@ -33,7 +33,7 @@ export const Footer = () => {
                 href="https://www.foratravel.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent hover:underline"
+                className="text-mustard hover:underline"
               >
                 Fora Travel
               </a>
@@ -54,7 +54,7 @@ export const Footer = () => {
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-foreground/60 hover:text-accent transition-colors"
+              className="text-primary-foreground/60 hover:text-mustard transition-colors"
               aria-label="Follow on Instagram"
             >
               <Instagram size={20} aria-hidden="true" />

@@ -35,7 +35,7 @@ export const Navigation = () => {
         <nav className="container mx-auto px-6 flex items-center justify-between" aria-label="Main navigation">
           <a href="#" className="flex items-baseline gap-1 text-2xl tracking-tight" aria-label="Sam Makes Plans - Home">
             <span className="font-display font-extrabold text-foreground uppercase text-lg">Sam Makes</span>
-            <span className="font-script text-accent text-2xl">plans</span>
+            <span className="font-script text-primary text-2xl">plans</span>
           </a>
 
           <div className="hidden md:flex items-center gap-10">

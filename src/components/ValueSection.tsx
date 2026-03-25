@@ -5,17 +5,17 @@ const values = [
   {
     icon: Route,
     title: "Logistics Mastery",
-    description: "I manage the multi-city routing and \"how do we get there?\" questions so you don't have to.",
+    description: "I handle the 'how do we get there?' puzzles so your group stays in the moment.",
   },
   {
     icon: Star,
     title: "VIP Access",
-    description: "Through my partnership with Fora, I unlock perks like free breakfast, room upgrades, and resort credits at over 4,500+ hotels.",
+    description: "Through Fora, I secure perks that make you feel truly cared for—like free breakfast and room upgrades.",
   },
   {
     icon: Umbrella,
-    title: "Ancillary Support",
-    description: "I don't just book the room. I handle your airport transfers, travel insurance, and curated local tours.",
+    title: "Whole-Trip Support",
+    description: "From transfers to insurance and curated local tours, I'm your safety net.",
   },
   {
     icon: Clock,
@@ -35,7 +35,7 @@ export const ValueSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-sm uppercase tracking-widest text-accent font-semibold font-display">The Difference</span>
+          <span className="text-sm uppercase tracking-widest text-mustard font-semibold font-display">The Empathetic Advantage</span>
           <h2 id="value-heading" className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground mt-4 mb-6 uppercase">
             Why Book With Me?
           </h2>
@@ -52,7 +52,7 @@ export const ValueSection = () => {
               className="text-center"
             >
               <div className="w-14 h-14 rounded-full bg-primary-foreground/10 flex items-center justify-center mx-auto mb-4" aria-hidden="true">
-                <item.icon className="w-7 h-7 text-accent" aria-hidden="true" />
+                <item.icon className="w-7 h-7 text-mustard" aria-hidden="true" />
               </div>
               <h3 className="font-display text-lg font-bold text-primary-foreground mb-3 uppercase">{item.title}</h3>
               <p className="text-primary-foreground/70 text-sm leading-relaxed font-sans">{item.description}</p>
@@ -69,7 +69,7 @@ export const ValueSection = () => {
           className="text-center"
         >
           <p className="font-script text-2xl md:text-3xl text-mustard">
-            "I save my clients an average of 40+ hours of planning time."
+            "I save my clients 40+ hours of stress so they can just show up and be present."
           </p>
           <p className="text-primary-foreground/50 text-sm mt-2 font-sans">— Sam's Pro Tip</p>
         </motion.div>

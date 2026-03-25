@@ -7,7 +7,7 @@ const services = [
     title: "The Quick Pulse",
     icon: Phone,
     focus: "Free 15-min Call",
-    description: "A fast chat to see if your group's vision aligns with my expertise. No commitment, just vibes.",
+    description: "A fast chat to see if your vision aligns with my expertise. No commitment, just vibes.",
     inclusions: ["Trip vision alignment", "Budget feasibility check", "Service recommendation"],
     investment: "Free",
   },
@@ -50,7 +50,7 @@ const itemVariants = {
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 md:py-32 bg-cream-dark" aria-labelledby="services-heading" role="region">
+    <section id="services" className="py-24 md:py-32 bg-card" aria-labelledby="services-heading" role="region">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -81,19 +81,19 @@ export const ServicesSection = () => {
               variants={itemVariants}
               className={`relative bg-background rounded-lg p-8 lg:p-10 transition-all duration-500 hover:shadow-medium group border-2 ${
                 service.featured
-                  ? "border-accent shadow-medium md:-translate-y-4"
-                  : "border-transparent shadow-soft hover:-translate-y-2 hover:border-accent/30"
+                  ? "border-primary shadow-medium md:-translate-y-4"
+                  : "border-transparent shadow-soft hover:-translate-y-2 hover:border-primary/30"
               }`}
             >
               {service.featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full uppercase tracking-wider font-display">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full uppercase tracking-wider font-display">
                   Most Popular
                 </div>
               )}
 
               <div className="flex items-center gap-3 mb-6">
                 <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
-                  service.featured ? "bg-accent text-accent-foreground" : "bg-primary/10 text-primary"
+                  service.featured ? "bg-primary text-primary-foreground" : "bg-primary/10 text-primary"
                 }`} aria-hidden="true">
                   <service.icon size={24} aria-hidden="true" />
                 </div>
@@ -110,7 +110,7 @@ export const ServicesSection = () => {
                 <ul className="mt-3 space-y-2">
                   {service.inclusions.map((item) => (
                     <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground font-sans">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" aria-hidden="true" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" aria-hidden="true" />
                       {item}
                     </li>
                   ))}

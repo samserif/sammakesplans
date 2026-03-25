@@ -41,7 +41,7 @@ export const AboutSection = () => {
                 className="w-full h-full object-cover object-top rounded-lg shadow-medium"
               />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-lg -z-10" aria-hidden="true" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-accent/20 rounded-lg -z-10" aria-hidden="true" />
+              <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-primary/20 rounded-lg -z-10" aria-hidden="true" />
             </div>
           </motion.div>
 
@@ -54,24 +54,24 @@ export const AboutSection = () => {
           >
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8 font-sans">
               <p>
-                I've lived in NYC for 10 years and explored 43 countries. In my "other life" in tech, I build products that are easy for people to use. I realized travel should be the same way.
+                I've lived in NYC for 10 years and explored 43 countries, but the most important thing I've learned isn't which hotel is the trendiest—it's that a trip is only as good as the connection it fosters.
               </p>
               <p>
-                Most group trips are stressful because the logistics don't match the dream. I started Sam Makes Plans to bridge that gap. I combine my obsession for detail with my deep connections in the travel industry to design seamless adventures for "experience junkies" who want hidden gems, not just tourist traps.
+                Coming from a background in UX design, I see travel through a different lens. I don't just "book rooms"; I architect experiences where the flow is effortless, so you can be fully present with the people you love. Whether it's a milestone celebration or a remote team retreat, I combine deep industry connections with a detail-obsessed process to build a trip that feels exactly like <em>you</em>.
               </p>
             </div>
 
             {/* Handwritten note */}
-            <div className="mb-8 p-4 bg-mustard/10 border-l-4 border-mustard rounded-r-lg">
-              <p className="font-script text-xl text-mustard">
-                "I save my clients an average of 40+ hours of planning time."
+            <div className="mb-8 p-4 bg-primary/5 border-l-4 border-primary rounded-r-lg">
+              <p className="font-script text-xl text-primary">
+                "Connection is the real destination."
               </p>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4" role="list" aria-label="Experience statistics">
               {stats.map((stat) => (
-                <div key={stat.label} className="text-center p-4 bg-cream-dark rounded-lg" role="listitem">
+                <div key={stat.label} className="text-center p-4 bg-card rounded-lg" role="listitem">
                   <stat.icon className="w-5 h-5 text-accent mx-auto mb-2" aria-hidden="true" />
                   <span className="block font-display text-2xl font-extrabold text-foreground" aria-label={`${stat.value} ${stat.label}`}>{stat.value}</span>
                   <span className="text-xs text-muted-foreground font-sans">{stat.label}</span>
