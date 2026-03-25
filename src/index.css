@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,60 +6,61 @@
 
 @layer base {
   :root {
-    /* Cream/Parchment base */
-    --background: 30 47% 96%;
-    --foreground: 192 100% 17%;
+    /* Muted Lavender base */
+    --background: 270 100% 95%;
+    --foreground: 258 55% 25%;
 
-    --card: 30 40% 94%;
-    --card-foreground: 192 100% 17%;
+    --card: 270 60% 92%;
+    --card-foreground: 258 55% 25%;
 
-    --popover: 30 47% 96%;
-    --popover-foreground: 192 100% 17%;
+    --popover: 270 100% 95%;
+    --popover-foreground: 258 55% 25%;
 
-    /* Deep Teal primary */
-    --primary: 192 100% 17%;
-    --primary-foreground: 30 47% 96%;
+    /* Royal Indigo primary */
+    --primary: 258 55% 54%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 30% 90%;
-    --secondary-foreground: 192 100% 17%;
+    --secondary: 270 40% 88%;
+    --secondary-foreground: 258 55% 25%;
 
-    --muted: 30 20% 88%;
-    --muted-foreground: 192 20% 40%;
+    --muted: 270 25% 85%;
+    --muted-foreground: 258 20% 45%;
 
-    /* Terracotta accent */
+    /* Vivid Terracotta accent */
     --accent: 14 52% 51%;
-    --accent-foreground: 30 47% 96%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 30 25% 85%;
-    --input: 30 25% 85%;
-    --ring: 192 100% 17%;
+    --border: 270 30% 85%;
+    --input: 270 30% 85%;
+    --ring: 258 55% 54%;
 
-    --radius: 0.375rem;
+    --radius: 0.5rem;
 
     /* Brand tokens */
-    --teal: 192 100% 17%;
-    --teal-light: 192 60% 30%;
+    --indigo: 258 55% 54%;
+    --indigo-light: 258 50% 65%;
+    --indigo-dark: 258 60% 42%;
     --terracotta: 14 52% 51%;
     --terracotta-light: 14 52% 60%;
     --terracotta-dark: 14 55% 42%;
-    --mustard: 46 98% 44%;
-    --mustard-light: 46 90% 55%;
-    --cream: 30 47% 96%;
-    --cream-dark: 30 30% 91%;
-    --charcoal: 192 100% 17%;
-    --warm-gray: 30 8% 50%;
+    --mustard: 43 65% 52%;
+    --mustard-light: 43 60% 62%;
+    --lavender: 270 100% 95%;
+    --lavender-dark: 270 40% 88%;
+    --charcoal: 258 55% 25%;
+    --warm-gray: 270 8% 50%;
 
     /* Typography */
-    --font-display: 'Montserrat', system-ui, sans-serif;
-    --font-sans: 'Poppins', system-ui, sans-serif;
-    --font-script: 'Dancing Script', cursive;
+    --font-display: 'Syne', system-ui, sans-serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-script: 'Caveat', cursive;
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(192 100% 17% / 0.08);
-    --shadow-medium: 0 8px 30px -8px hsl(192 100% 17% / 0.14);
+    --shadow-soft: 0 4px 20px -4px hsl(258 55% 54% / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(258 55% 54% / 0.18);
     --shadow-glow: 0 0 40px hsl(14 52% 51% / 0.2);
 
     /* Transitions */
@@ -67,42 +68,43 @@
   }
 
   .dark {
-    --background: 192 40% 8%;
-    --foreground: 30 40% 92%;
+    --background: 258 40% 8%;
+    --foreground: 270 40% 92%;
 
-    --card: 192 30% 12%;
-    --card-foreground: 30 40% 92%;
+    --card: 258 30% 12%;
+    --card-foreground: 270 40% 92%;
 
-    --popover: 192 40% 8%;
-    --popover-foreground: 30 40% 92%;
+    --popover: 258 40% 8%;
+    --popover-foreground: 270 40% 92%;
 
-    --primary: 30 47% 96%;
-    --primary-foreground: 192 100% 17%;
+    --primary: 258 55% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 192 20% 16%;
-    --secondary-foreground: 30 40% 92%;
+    --secondary: 258 20% 16%;
+    --secondary-foreground: 270 40% 92%;
 
-    --muted: 192 15% 18%;
-    --muted-foreground: 30 15% 60%;
+    --muted: 258 15% 18%;
+    --muted-foreground: 270 15% 60%;
 
     --accent: 14 52% 55%;
-    --accent-foreground: 30 47% 96%;
+    --accent-foreground: 0 0% 100%;
 
-    --border: 192 15% 22%;
-    --input: 192 15% 22%;
-    --ring: 14 52% 51%;
+    --border: 258 15% 22%;
+    --input: 258 15% 22%;
+    --ring: 258 55% 60%;
 
-    --teal: 192 60% 50%;
-    --teal-light: 192 50% 60%;
+    --indigo: 258 55% 60%;
+    --indigo-light: 258 50% 70%;
+    --indigo-dark: 258 60% 48%;
     --terracotta: 14 52% 55%;
     --terracotta-light: 14 52% 65%;
     --terracotta-dark: 14 55% 45%;
-    --mustard: 46 90% 55%;
-    --mustard-light: 46 85% 65%;
-    --cream: 192 30% 12%;
-    --cream-dark: 192 20% 16%;
-    --charcoal: 30 35% 88%;
-    --warm-gray: 30 8% 55%;
+    --mustard: 43 65% 55%;
+    --mustard-light: 43 60% 65%;
+    --lavender: 258 30% 12%;
+    --lavender-dark: 258 20% 16%;
+    --charcoal: 270 35% 88%;
+    --warm-gray: 270 8% 55%;
   }
 }
 
@@ -175,63 +177,7 @@
     text-wrap: balance;
   }
 
-  .bg-cream {
-    background-color: hsl(var(--cream));
-  }
-
-  .bg-cream-dark {
-    background-color: hsl(var(--cream-dark));
-  }
-
-  .text-teal {
-    color: hsl(var(--teal));
-  }
-
-  .bg-teal {
-    background-color: hsl(var(--teal));
-  }
-
-  .text-terracotta {
-    color: hsl(var(--terracotta));
-  }
-
-  .bg-terracotta {
-    background-color: hsl(var(--terracotta));
-  }
-
-  .text-mustard {
-    color: hsl(var(--mustard));
-  }
-
-  .bg-mustard {
-    background-color: hsl(var(--mustard));
-  }
-
-  .text-charcoal {
-    color: hsl(var(--charcoal));
-  }
-
-  .text-warm-gray {
-    color: hsl(var(--warm-gray));
-  }
-
-  .shadow-soft {
-    box-shadow: var(--shadow-soft);
-  }
-
-  .shadow-medium {
-    box-shadow: var(--shadow-medium);
-  }
-
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
-  }
-
   .transition-smooth {
     transition: var(--transition-smooth);
-  }
-
-  .border-terracotta {
-    border-color: hsl(var(--terracotta));
   }
 }

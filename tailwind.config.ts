@@ -47,11 +47,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        cream: "hsl(var(--cream))",
-        "cream-dark": "hsl(var(--cream-dark))",
-        teal: {
-          DEFAULT: "hsl(var(--teal))",
-          light: "hsl(var(--teal-light))",
+        indigo: {
+          DEFAULT: "hsl(var(--indigo))",
+          light: "hsl(var(--indigo-light))",
+          dark: "hsl(var(--indigo-dark))",
         },
         terracotta: {
           DEFAULT: "hsl(var(--terracotta))",
@@ -62,13 +61,17 @@ export default {
           DEFAULT: "hsl(var(--mustard))",
           light: "hsl(var(--mustard-light))",
         },
+        lavender: {
+          DEFAULT: "hsl(var(--lavender))",
+          dark: "hsl(var(--lavender-dark))",
+        },
         charcoal: "hsl(var(--charcoal))",
         "warm-gray": "hsl(var(--warm-gray))",
       },
       fontFamily: {
-        display: ["Montserrat", "system-ui", "sans-serif"],
-        sans: ["Poppins", "system-ui", "sans-serif"],
-        script: ["Dancing Script", "cursive"],
+        display: ["Syne", "system-ui", "sans-serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+        script: ["Caveat", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",

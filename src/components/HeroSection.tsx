@@ -10,10 +10,10 @@ export const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Group of travelers enjoying a scenic destination together"
+          alt="Group of travelers sharing a meal under warm ambient lighting"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/30 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/40 to-background" />
       </div>
 
       {/* Content */}
@@ -25,13 +25,14 @@ export const HeroSection = () => {
           className="max-w-5xl mx-auto"
         >
           <h1 id="hero-heading" className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold text-primary-foreground mb-6 leading-[1.05] tracking-tight uppercase">
-            Stop "Winging"
+            Because It's Never
             <br />
-            Your Group Trips.
+            <span className="font-script text-mustard text-[0.7em] normal-case italic">just</span>{" "}
+            About The Destination.
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
-            Bespoke adventure and celebration travel for groups of 6+. I handle the complex logistics and VIP details so you can actually enjoy the destination.
+          <p className="text-lg md:text-xl text-primary-foreground/85 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
+            Travel is as unique as the people you share it with. I design bespoke group adventures and retreats that prioritize the <em>who</em> as much as the <em>where</em>. I handle the logistics; you focus on the memories.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -40,7 +41,7 @@ export const HeroSection = () => {
                 Start Your Trip Inquiry
               </a>
             </Button>
-            <Button variant="hero-outline" size="xl" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+            <Button variant="hero-outline" size="xl" asChild>
               <a href="#services">
                 View Services
               </a>
