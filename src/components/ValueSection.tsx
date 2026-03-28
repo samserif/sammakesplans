@@ -30,8 +30,8 @@ export const ValueSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <span className="text-xs uppercase tracking-[0.3em] text-mustard font-display mb-4 block">The Empathetic Advantage</span>
-          <h2 id="value-heading" className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary-foreground uppercase tracking-wide">
+          <span className="text-xs tracking-[0.2em] text-mustard font-display mb-4 block">The Empathetic Advantage</span>
+          <h2 id="value-heading" className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary-foreground tracking-wide">
             Why Book With Me?
           </h2>
         </motion.div>
@@ -46,7 +46,7 @@ export const ValueSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="border-b border-primary-foreground/15 pb-8 last:border-0"
             >
-              <h3 className="font-display text-lg md:text-xl font-extrabold text-primary-foreground uppercase tracking-wide mb-2">
+              <h3 className="font-display text-lg md:text-xl font-extrabold text-primary-foreground tracking-wide mb-2">
                 {item.title}
               </h3>
               <p className="text-primary-foreground/70 text-base leading-relaxed font-sans max-w-2xl">

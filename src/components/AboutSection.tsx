@@ -27,8 +27,8 @@ export const AboutSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-xs uppercase tracking-[0.3em] text-accent font-display mb-4 block">My Story</span>
-            <h2 id="about-heading" className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-8 uppercase tracking-wide">
+            <span className="text-xs tracking-[0.2em] text-accent font-display mb-4 block">My Story</span>
+            <h2 id="about-heading" className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-8 tracking-wide">
               Why Sam?
             </h2>
 

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-travel.jpg";
 
 export const HeroSection = () => {
   return (
@@ -12,11 +11,11 @@ export const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 id="hero-heading" className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-primary-foreground leading-[1.05] tracking-tight uppercase">
+          <h1 id="hero-heading" className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-primary-foreground leading-[1.05] tracking-tight">
             Because It's
             <br />
             Never{" "}
-            <span className="font-script text-mustard text-[0.65em] normal-case italic">just</span>
+            <span className="font-script text-mustard text-[0.65em] italic">just</span>
             <br />
             About The
             <br />
@@ -34,17 +33,21 @@ export const HeroSection = () => {
           </Button>
         </motion.div>
 
-        {/* Right: Image */}
+        {/* Right: Video */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
           className="hidden lg:block"
         >
-          <img
-            src={heroImage}
-            alt="Group of travelers sharing a meal under warm ambient lighting"
+          <video
+            src="/videos/hero.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
             className="w-full h-[70vh] object-cover rounded-sm"
+            aria-label="Travel highlights montage"
           />
         </motion.div>
       </div>

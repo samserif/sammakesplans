@@ -30,8 +30,8 @@ export const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <span className="text-xs uppercase tracking-[0.3em] text-accent font-display mb-4 block">Services</span>
-          <h2 id="services-heading" className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground uppercase tracking-wide">
+          <span className="text-xs tracking-[0.2em] text-accent font-display mb-4 block">Services</span>
+          <h2 id="services-heading" className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground tracking-wide">
             How I Work
           </h2>
         </motion.div>
@@ -48,10 +48,10 @@ export const ServicesSection = () => {
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                 <div className="flex-1">
-                  <h3 className="font-display text-xl md:text-2xl font-extrabold text-foreground uppercase tracking-wide">
+                  <h3 className="font-display text-xl md:text-2xl font-extrabold text-foreground tracking-wide">
                     {service.title}
                   </h3>
-                  <span className="text-xs uppercase tracking-[0.2em] text-accent font-display mt-1 block">
+                  <span className="text-xs tracking-[0.15em] text-accent font-display mt-1 block">
                     {service.detail}
                   </span>
                 </div>
