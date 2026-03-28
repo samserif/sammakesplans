@@ -9,7 +9,7 @@ export const StatementSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-snug uppercase tracking-wide"
+          className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-snug tracking-wide"
         >
           A lot of group travel falls apart because nobody wants to be the planner.{" "}
           <span className="text-muted-foreground">
