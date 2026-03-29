@@ -36,29 +36,29 @@ export const ServicesSection = () => {
           </h2>
         </motion.div>
 
-        <div className="divide-y divide-border">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="py-10 first:pt-0 last:pb-0"
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              whileHover={{ y: -6, transition: { duration: 0.3 } }}
+              className="bg-background rounded-xl p-8 cursor-default"
+              style={{
+                boxShadow: "8px 8px 0px hsl(var(--primary))",
+              }}
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-                <div className="flex-1">
-                  <h3 className="font-display text-xl md:text-2xl font-extrabold text-foreground tracking-wide">
-                    {service.title}
-                  </h3>
-                  <span className="text-xs tracking-[0.15em] text-accent font-display mt-1 block">
-                    {service.detail}
-                  </span>
-                </div>
-                <p className="text-muted-foreground text-base leading-relaxed font-sans md:max-w-sm">
-                  {service.description}
-                </p>
-              </div>
+              <h3 className="font-display text-xl font-extrabold text-foreground mb-2">
+                {service.title}
+              </h3>
+              <span className="text-sm text-accent font-display mb-4 block">
+                {service.detail}
+              </span>
+              <p className="text-muted-foreground text-sm leading-relaxed font-sans">
+                {service.description}
+              </p>
             </motion.div>
           ))}
         </div>
