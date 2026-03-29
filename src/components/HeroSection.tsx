@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-primary overflow-hidden" aria-labelledby="hero-heading">
-      {/* Video background on mobile, right column on desktop */}
+      {/* Video background at all sizes */}
       <video
         src="/videos/hero.mp4"
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover lg:hidden opacity-30"
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
         aria-label="Travel highlights montage"
       />
 
@@ -44,23 +44,8 @@ export const HeroSection = () => {
           </Button>
         </motion.div>
 
-        {/* Right: Video (desktop only) */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="hidden lg:block"
-        >
-          <video
-            src="/videos/hero.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-[70vh] object-cover rounded-sm"
-            aria-label="Travel highlights montage"
-          />
-        </motion.div>
+        {/* Right: empty space on desktop to let video show through */}
+        <div className="hidden lg:block" />
       </div>
     </section>
   );
