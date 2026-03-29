@@ -4,7 +4,18 @@ import { Button } from "@/components/ui/button";
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-primary overflow-hidden" aria-labelledby="hero-heading">
-      <div className="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center pt-28 pb-20">
+      {/* Video background on mobile, right column on desktop */}
+      <video
+        src="/videos/hero.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover lg:hidden opacity-30"
+        aria-label="Travel highlights montage"
+      />
+
+      <div className="container relative z-10 mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center pt-28 pb-20">
         {/* Left: Text */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -33,7 +44,7 @@ export const HeroSection = () => {
           </Button>
         </motion.div>
 
-        {/* Right: Video */}
+        {/* Right: Video (desktop only) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
