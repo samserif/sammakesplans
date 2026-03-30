@@ -39,6 +39,12 @@ const reviews = [
   },
 ];
 
+const stats = [
+  { value: "50+", label: "Trips Booked" },
+  { value: "13", label: "Destinations" },
+  { value: "100+", label: "Hours Saved" },
+];
+
 export const ReviewsSection = () => {
   return (
     <section id="reviews" className="py-24 md:py-32 bg-background" aria-labelledby="reviews-heading" role="region">
