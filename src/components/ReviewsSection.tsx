@@ -39,6 +39,12 @@ const reviews = [
   },
 ];
 
+const stats = [
+  { value: "50+", label: "Trips Booked" },
+  { value: "13", label: "Destinations" },
+  { value: "100+", label: "Hours Saved" },
+];
+
 export const ReviewsSection = () => {
   return (
     <section id="reviews" className="py-24 md:py-32 bg-background" aria-labelledby="reviews-heading" role="region">
@@ -56,7 +62,28 @@ export const ReviewsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-3 gap-8 text-center mt-10 mb-14">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="flex flex-col items-center"
+            >
+              <span className="text-4xl md:text-5xl font-display font-extrabold text-foreground">
+                {stat.value}
+              </span>
+              <div className="w-10 h-1 bg-accent rounded-full mt-3 mb-2" />
+              <span className="text-sm text-muted-foreground font-sans">
+                {stat.label}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map((review, index) => (
             <motion.div
               key={review.name}
