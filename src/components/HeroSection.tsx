@@ -11,7 +11,7 @@ export const HeroSection = () => {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-20 lg:hidden"
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
         aria-label="Travel highlights montage"
       />
 
@@ -45,22 +45,7 @@ export const HeroSection = () => {
         </motion.div>
 
         {/* Right: empty space on desktop to let video show through */}
-        <motion.div
-          className="hidden lg:block relative rounded-2xl overflow-hidden"
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <video
-            src="/videos/hero.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover rounded-2xl opacity-20"
-            aria-hidden="true"
-          />
-        </motion.div>
+        <div className="hidden lg:block" />
       </div>
     </section>
   );

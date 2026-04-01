@@ -17,7 +17,7 @@
     --popover-foreground: 258 55% 25%;
 
     /* Royal Indigo primary */
-    --primary: 258 48% 48%;
+    --primary: 258 55% 54%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 270 40% 88%;
@@ -35,12 +35,12 @@
 
     --border: 270 30% 85%;
     --input: 270 30% 85%;
-    --ring: 258 48% 48%;
+    --ring: 258 55% 54%;
 
     --radius: 0.5rem;
 
     /* Brand tokens */
-    --indigo: 258 48% 48%;
+    --indigo: 258 55% 54%;
     --indigo-light: 258 50% 65%;
     --indigo-dark: 258 60% 42%;
     --terracotta: 14 52% 51%;

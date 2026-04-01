@@ -1,27 +1,22 @@
 
 
-# Hero Section: Video Positioned Right of Text on Desktop
+# Add Stats with Accent Underline Style to Client Love Section
 
-## Current State
-The video is an absolute-positioned full-bleed background at 20% opacity. On desktop, an empty right column lets the video show through behind everything.
+## Changes
 
-## Change
-On desktop (lg+), move the video from a full background into the right grid column as a visible, styled element. On mobile, keep it as a subtle full background.
+**File:** `src/components/ReviewsSection.tsx`
 
-### Implementation — `src/components/HeroSection.tsx`
+Add a 3-column stats row between the section heading and the review cards grid. Each stat uses large bold numbers with a short thick terracotta/accent underline (40px wide, 3-4px tall) beneath the number, then the label below. No cards, no backgrounds — just typography and the colored underline as visual anchor.
 
-1. **Keep the background video for mobile only** — add `lg:hidden` to the existing absolute video element
-2. **Add a second video element in the right grid column** — visible only on `lg:` and up (`hidden lg:block`), with rounded corners and higher opacity (~40-50%) so it's clearly visible as content rather than background texture
-3. The right column replaces the empty `<div className="hidden lg:block" />` with the visible video, wrapped in a motion container for a fade-in entrance
+**Stats:**
+1. **50+** — Trips Booked
+2. **13** — Destinations  
+3. **100+** — Hours Saved
 
-```text
-┌─────────────────────────────────────────────┐
-│  Mobile: video behind text (subtle bg)      │
-├──────────────────┬──────────────────────────┤
-│  Desktop:        │                          │
-│  Text content    │   Video (rounded,        │
-│  (left col)      │   higher opacity)        │
-│                  │                          │
-└──────────────────┴──────────────────────────┘
-```
+**Styling:**
+- Numbers: `text-4xl md:text-5xl font-display font-extrabold text-foreground`
+- Underline: `w-10 h-1 bg-accent rounded-full mx-auto mt-3 mb-2`
+- Labels: `text-sm text-muted-foreground font-sans`
+- Grid: `grid grid-cols-3 gap-8 text-center mt-10 mb-14`
+- Framer-motion staggered fade-up entrance
 
