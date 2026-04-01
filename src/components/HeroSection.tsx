@@ -45,7 +45,22 @@ export const HeroSection = () => {
         </motion.div>
 
         {/* Right: empty space on desktop to let video show through */}
-        <div className="hidden lg:block" />
+        <motion.div
+          className="hidden lg:block relative rounded-2xl overflow-hidden"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <video
+            src="/videos/hero.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover rounded-2xl opacity-50"
+            aria-hidden="true"
+          />
+        </motion.div>
       </div>
     </section>
   );
