@@ -57,7 +57,7 @@ export const HeroSection = () => {
             muted
             loop
             playsInline
-            className="w-full h-full object-cover rounded-2xl opacity-50"
+            className="w-full h-full object-cover rounded-2xl opacity-20"
             aria-hidden="true"
           />
         </motion.div>
