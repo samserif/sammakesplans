@@ -6,14 +6,6 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableRow,
-  TableHead,
-  TableCell,
-} from "@/components/ui/table";
 
 const serviceTiers = [
   {
@@ -74,27 +66,6 @@ const serviceTiers = [
     howItWorks:
       "Free discovery call to understand scope. Custom quote based on group size, duration, and complexity. Fees discussed on a case-by-case basis.",
   },
-  {
-    id: "not-sure",
-    title: "Not Sure Yet",
-    fee: "Free",
-    bestFor: "Clients exploring options",
-    description: "Leads to a free discovery call where we discuss:",
-    included: [
-      "Your travel goals and style",
-      "Which service tier fits your needs",
-      "Whether we're a good fit to work together",
-    ],
-    howItWorks: "",
-  },
-];
-
-const feeComparison = [
-  { service: "Direct Booking", travelers: "Any", fee: "Free", gets: "I book what you want, you get perks" },
-  { service: "Trip Planning", travelers: "1–5", fee: "$75 deposit (credited if you book)", gets: "Research, recommendations, itinerary" },
-  { service: "Group Trips", travelers: "6–15", fee: "$150 flat fee", gets: "Full group coordination" },
-  { service: "Large / Corporate", travelers: "15+", fee: "Custom quote", gets: "Complex logistics, case-by-case" },
-  { service: "Discovery Call", travelers: "Any", fee: "Free", gets: "15 min consultation" },
 ];
 
 const faqs = [
@@ -126,7 +97,7 @@ export const ServicesSection = () => {
         >
           <span className="text-xs tracking-[0.2em] text-accent font-display mb-4 block">Services</span>
           <h2 id="services-heading" className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground tracking-wide">
-            How I Work
+            Working With Me
           </h2>
         </motion.div>
 
@@ -193,42 +164,47 @@ export const ServicesSection = () => {
           </Accordion>
         </motion.div>
 
-        {/* Fee Comparison Table */}
+        {/* Not Sure Yet? */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="mt-16"
+          className="mt-14"
         >
-          <h3 className="font-display text-xl md:text-2xl font-extrabold text-foreground mb-6">
-            Fee Comparison
+          <h3 className="font-display text-xl md:text-2xl font-extrabold text-foreground mb-2">
+            Not Sure Yet?
           </h3>
-          <div
-            className="bg-background rounded-xl overflow-hidden"
-            style={{ boxShadow: "8px 8px 0px hsl(var(--primary))" }}
-          >
-            <Table>
-              <TableHeader>
-                <TableRow className="border-border/50">
-                  <TableHead className="font-display font-semibold text-foreground">Service</TableHead>
-                  <TableHead className="font-display font-semibold text-foreground">Travelers</TableHead>
-                  <TableHead className="font-display font-semibold text-foreground">Fee</TableHead>
-                  <TableHead className="font-display font-semibold text-foreground">What You Get</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {feeComparison.map((row) => (
-                  <TableRow key={row.service} className="border-border/30">
-                    <TableCell className="font-display font-semibold text-foreground text-sm">{row.service}</TableCell>
-                    <TableCell className="text-muted-foreground text-sm">{row.travelers}</TableCell>
-                    <TableCell className="text-accent font-display text-sm">{row.fee}</TableCell>
-                    <TableCell className="text-muted-foreground text-sm">{row.gets}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
+          <p className="text-muted-foreground text-sm font-sans mb-4">
+            Book a free discovery call where we discuss:
+          </p>
+          <ul className="space-y-1.5">
+            {[
+              "Your travel goals and style",
+              "Which service tier fits your needs",
+              "Whether we're a good fit to work together",
+            ].map((item, i) => (
+              <li key={i} className="text-sm text-muted-foreground font-sans flex items-start gap-2">
+                <span className="text-accent mt-1 shrink-0">•</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+
+        {/* Primary CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-10"
+        >
+          <Button variant="hero" size="xl" asChild>
+            <a href="https://calendar.app.google/ziozYiHLnjXDsFp37" target="_blank" rel="noopener noreferrer">
+              Book a Discovery Call
+            </a>
+          </Button>
         </motion.div>
 
         {/* FAQ Accordion */}
@@ -236,7 +212,7 @@ export const ServicesSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
           className="mt-16"
         >
           <h3 className="font-display text-xl md:text-2xl font-extrabold text-foreground mb-6">
@@ -262,21 +238,6 @@ export const ServicesSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </motion.div>
-
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-16"
-        >
-          <Button variant="outline" size="xl" asChild>
-            <a href="https://www.foratravel.com/advisor/samantha-provenza" target="_blank" rel="noopener noreferrer">
-              Let's Talk
-            </a>
-          </Button>
         </motion.div>
       </div>
     </section>
