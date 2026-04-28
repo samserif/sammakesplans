@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-md shadow-soft hover:shadow-medium",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-md",
-        outline: "border border-foreground/20 bg-transparent hover:bg-foreground/5 hover:border-foreground/40 rounded-md",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-md",
-        ghost: "hover:bg-accent hover:text-accent-foreground rounded-md",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-sm shadow-soft hover:shadow-medium",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-sm",
+        outline: "border border-foreground/20 bg-transparent hover:bg-foreground/5 hover:border-foreground/40 rounded-sm",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-sm",
+        ghost: "hover:bg-secondary hover:text-secondary-foreground rounded-sm",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-accent text-accent-foreground hover:bg-terracotta-dark shadow-medium hover:shadow-glow font-semibold tracking-wide rounded-md",
-        "hero-outline": "border-2 border-primary-foreground text-primary-foreground bg-transparent hover:bg-primary-foreground hover:text-primary font-semibold tracking-wide rounded-md",
+        hero: "bg-primary text-primary-foreground hover:bg-indigo-dark shadow-soft hover:shadow-medium font-medium rounded-sm",
+        "hero-outline": "border border-foreground/30 text-foreground bg-transparent hover:bg-foreground hover:text-background font-medium rounded-sm",
       },
       size: {
         default: "h-10 px-6 py-2",
