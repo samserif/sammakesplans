@@ -1,43 +1,41 @@
 import { Instagram } from "lucide-react";
 
+const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 bg-primary text-primary-foreground" role="contentinfo">
+    <footer className="py-12 bg-background text-foreground border-t border-border" role="contentinfo">
       <div className="container mx-auto px-6 lg:px-12">
-        {/* Email CTA */}
         <div className="mb-12">
-          <span className="text-xs tracking-[0.2em] text-primary-foreground/50 font-display block mb-3">Ready?</span>
+          <span className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium block mb-3">Ready?</span>
           <a
-            href="https://www.foratravel.com/advisor/samantha-provenza"
+            href={intakeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-display text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary-foreground tracking-wide hover:text-mustard transition-colors duration-300"
+            className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-foreground hover:text-primary transition-colors duration-300"
           >
-            Schedule a Discovery Call →
+            Start the intake form →
           </a>
         </div>
 
-        <div className="border-t border-primary-foreground/15 pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <a href="#" className="font-display text-sm font-extrabold text-primary-foreground tracking-[0.15em]">
-              Sam Makes <span className="font-script text-mustard text-lg normal-case">plans</span>
+            <a href="#" className="font-display text-base font-black text-foreground">
+              Samantha Provenza
             </a>
-            <p className="text-xs text-primary-foreground/40 mt-1 font-sans">
-              Powered by{" "}
-              <a href="https://www.foratravel.com" target="_blank" rel="noopener noreferrer" className="text-mustard hover:underline">
-                Fora Travel
-              </a>
+            <p className="text-xs text-muted-foreground mt-1 font-sans">
+              Travel Designer · Fora Travel · New York, NY
             </p>
           </div>
 
           <div className="flex items-center gap-8">
             <nav className="flex items-center gap-6" aria-label="Footer navigation">
-              <a href="#story" className="text-xs tracking-[0.15em] text-primary-foreground/50 hover:text-primary-foreground transition-colors font-display">
+              <a href="#story" className="text-xs tracking-[0.16em] text-muted-foreground hover:text-primary transition-colors font-sans font-medium">
                 About
               </a>
-              <a href="#services" className="text-xs tracking-[0.15em] text-primary-foreground/50 hover:text-primary-foreground transition-colors font-display">
+              <a href="#services" className="text-xs tracking-[0.16em] text-muted-foreground hover:text-primary transition-colors font-sans font-medium">
                 Services
               </a>
             </nav>
@@ -45,7 +43,7 @@ export const Footer = () => {
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-foreground/50 hover:text-mustard transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Follow on Instagram"
             >
               <Instagram size={18} aria-hidden="true" />
@@ -53,8 +51,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        <p className="text-xs text-primary-foreground/30 mt-8 font-sans">
-          © {currentYear} Sam Makes Plans. All rights reserved.
+        <p className="text-xs text-muted-foreground mt-8 font-sans">
+          © {currentYear} Samantha Provenza. All rights reserved.
         </p>
       </div>
     </footer>

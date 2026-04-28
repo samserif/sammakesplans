@@ -1,70 +1,55 @@
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
-const values = [
-  {
-    title: "Logistics Mastery",
-    description: "I handle the 'how do we get there?' puzzles so your group stays in the moment.",
-  },
-  {
-    title: "VIP Access",
-    description: "Through Fora, I secure perks that make you feel truly cared for—like free breakfast and room upgrades.",
-  },
-  {
-    title: "Whole-Trip Support",
-    description: "From transfers to insurance and curated local tours, I'm your safety net.",
-  },
-  {
-    title: "Time Saved",
-    description: "From research to booking to coordinating group logistics — I take it all off your plate.",
-  },
+const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
+
+const details = [
+  "Discovery calls are always free",
+  "Planning fees discussed upfront — no surprises",
+  "Group trips from 6 to 100+ people",
+  "International-first, US destinations welcome",
+  "I stay in touch from first search to final booking",
 ];
 
 export const ValueSection = () => {
   return (
-    <section id="value" className="py-24 md:py-32 bg-primary text-primary-foreground" aria-labelledby="value-heading" role="region">
-      <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+    <section id="value" className="py-24 md:py-32 bg-foreground text-background" aria-labelledby="value-heading" role="region">
+      <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="max-w-3xl"
         >
-          <span className="text-xs tracking-[0.2em] text-mustard font-display mb-4 block">The Empathetic Advantage</span>
-          <h2 id="value-heading" className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary-foreground tracking-wide">
-            Why Book With Me?
+          <span className="text-xs tracking-[0.2em] text-background/60 font-sans font-medium mb-4 block">CTA</span>
+          <h2 id="value-heading" className="font-display text-4xl md:text-6xl lg:text-7xl font-black text-background leading-tight">
+            Tell me about your trip.
           </h2>
+          <p className="text-background/75 text-base md:text-lg leading-relaxed font-sans max-w-2xl mt-7 mb-10">
+            Fill out the intake form and I’ll follow up with a free discovery call. No pressure, no commitment — just a conversation about what you’re planning and whether I’m the right fit.
+          </p>
+          <Button variant="hero" size="xl" asChild>
+            <a href={intakeUrl} target="_blank" rel="noopener noreferrer">
+              Start the intake form →
+            </a>
+          </Button>
         </motion.div>
 
-        <div className="space-y-10">
-          {values.map((item, index) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 mt-14">
+          {details.map((detail, index) => (
             <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 20 }}
+              key={detail}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="border-b border-primary-foreground/15 pb-8 last:border-0"
+              transition={{ duration: 0.45, delay: index * 0.07 }}
+              className="border-t border-primary pt-4"
             >
-              <h3 className="font-display text-lg md:text-xl font-extrabold text-primary-foreground tracking-wide mb-2">
-                {item.title}
-              </h3>
-              <p className="text-primary-foreground/70 text-base leading-relaxed font-sans max-w-2xl">
-                {item.description}
-              </p>
+              <p className="text-sm text-background/75 font-sans">{detail}</p>
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="font-script text-2xl md:text-3xl text-mustard mt-16"
-        >
-          "I save my clients 40+ hours of stress so they can just show up and be present."
-        </motion.p>
       </div>
     </section>
   );
