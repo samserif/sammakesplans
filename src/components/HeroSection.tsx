@@ -1,51 +1,56 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
+
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-primary overflow-hidden" aria-labelledby="hero-heading">
-      {/* Video background at all sizes */}
+    <section className="relative min-h-screen flex items-center bg-background overflow-hidden" aria-labelledby="hero-heading">
       <video
         src="/videos/hero.mp4"
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-20"
+        className="absolute inset-y-0 right-0 hidden lg:block w-1/2 h-full object-cover opacity-35"
         aria-label="Travel highlights montage"
       />
+      <div className="absolute inset-y-0 right-0 hidden lg:block w-1/2 bg-secondary/60" />
 
-      <div className="container relative z-10 mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center pt-28 pb-20">
-        {/* Left: Text */}
+      <div className="container relative z-10 mx-auto px-6 lg:px-12 pt-32 pb-20">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-3xl"
         >
-          <h1 id="hero-heading" className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-primary-foreground leading-[1.05] tracking-tight">
-            Because It's
-            <br />
-            Never{" "}
-            <span className="font-script text-mustard text-[0.65em] italic">just</span>
-            <br />
-            About The
-            <br />
-            Destination.
-          </h1>
-
-          <p className="text-base md:text-lg text-primary-foreground/75 max-w-lg mt-8 mb-10 leading-relaxed font-sans">
-            Travel is as unique as the people you share it with. I design bespoke group adventures and retreats that prioritize the <em>who</em> as much as the <em>where</em>.
+          <p className="text-xs md:text-sm font-sans font-medium tracking-[0.2em] text-muted-foreground mb-6">
+            Samantha Provenza · Travel Designer · Fora Travel · NYC
           </p>
 
-          <Button variant="hero-outline" size="xl" asChild>
-            <a href="https://www.foratravel.com/advisor/samantha-provenza" target="_blank" rel="noopener noreferrer">
-              Start Your Trip Inquiry
-            </a>
-          </Button>
-        </motion.div>
+          <h1 id="hero-heading" className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-foreground leading-[0.98] text-balance">
+            The right trip. <span className="text-primary">No guesswork.</span>
+          </h1>
 
-        {/* Right: empty space on desktop to let video show through */}
-        <div className="hidden lg:block" />
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mt-8 mb-10 leading-relaxed font-sans">
+            Effortless group travel, handled with care. You focus on the group chat. I’ll handle the rest.
+          </p>
+
+          <div className="flex flex-col sm:flex-row sm:items-center gap-5">
+            <Button variant="hero" size="xl" asChild>
+              <a href={intakeUrl} target="_blank" rel="noopener noreferrer">
+                Start Planning →
+              </a>
+            </Button>
+            <a href="#how-it-works" className="text-sm font-sans font-medium text-foreground hover:text-primary transition-colors">
+              See how it works ↓
+            </a>
+          </div>
+
+          <blockquote className="mt-14 border-l-2 border-primary pl-5 text-lg md:text-xl font-display font-bold text-foreground max-w-xl">
+            “She thinks of everything before you think to ask.”
+          </blockquote>
+        </motion.div>
       </div>
     </section>
   );
