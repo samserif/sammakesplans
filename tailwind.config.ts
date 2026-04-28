@@ -69,9 +69,9 @@ export default {
         "warm-gray": "hsl(var(--warm-gray))",
       },
       fontFamily: {
-        display: ["Syne", "system-ui", "sans-serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
-        script: ["Caveat", "cursive"],
+        display: ["Fraunces", "Georgia", "serif"],
+        sans: ["Be Vietnam Pro", "system-ui", "sans-serif"],
+        script: ["Fraunces", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
