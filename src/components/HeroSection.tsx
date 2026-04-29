@@ -13,11 +13,10 @@ export const HeroSection = () => {
         muted
         loop
         playsInline
-        className="absolute inset-0 h-full w-full object-cover opacity-15 mix-blend-multiply md:opacity-20 lg:inset-y-0 lg:left-auto lg:right-0 lg:w-1/2 lg:opacity-100 lg:mix-blend-normal"
+        className="absolute inset-0 h-full w-full object-contain object-center opacity-15 mix-blend-multiply md:opacity-12 lg:object-right lg:opacity-10"
         aria-label="Animated travel planning icons"
       />
-      <div className="absolute inset-0 bg-background/70 lg:hidden" />
-      <div className="absolute inset-y-0 right-0 hidden lg:block w-1/2 bg-secondary/20" />
+      <div className="absolute inset-0 bg-background/70" />
 
       <div className="container relative z-10 mx-auto px-6 lg:px-12 pt-32 pb-20">
         <motion.div
