@@ -19,21 +19,24 @@ export const Navigation = () => {
 
   return (
     <>
-      <a href="#main-content" className="skip-link">Skip to main content</a>
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
 
       <motion.header
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled ? "bg-background/90 backdrop-blur-md py-4 border-b border-border/70" : "bg-background/70 backdrop-blur-sm py-6"
+          isScrolled
+            ? "bg-background/90 backdrop-blur-md py-4 border-b border-border/70"
+            : "bg-background/70 backdrop-blur-sm py-6"
         }`}
         role="banner"
       >
         <nav className="container mx-auto px-6 lg:px-12 flex items-center justify-between" aria-label="Main navigation">
           <a href="#" className="flex flex-col leading-none" aria-label="Samantha Provenza - Home">
-            <span className="font-display font-black text-foreground text-base">Samantha Provenza</span>
-            <span className="font-sans text-[0.62rem] font-medium tracking-[0.2em] text-muted-foreground mt-1">Travel Designer</span>
+            <span className="font-display font-black text-foreground text-base">SP</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
