@@ -14,6 +14,7 @@ const serviceTiers = [
     id: "direct-booking",
     title: "Direct Booking",
     fee: "Free",
+    bestFor: "Best for travelers who already know where they want to stay.",
     description:
       "You’ve already picked a hotel or cruise. I check rates, lock in the best available perks through my preferred partner network, and handle the booking. No charge to you — I earn commission from the travel partner.",
     included: [
@@ -26,6 +27,7 @@ const serviceTiers = [
     id: "trip-planning",
     title: "Trip Planning",
     fee: "1–5 travelers · $75 planning fee",
+    bestFor: "Best for couples, families, and small groups choosing between options.",
     description:
       "You need help deciding — comparing hotels, getting recommendations, building an itinerary. The $75 deposit is due before planning begins and covers my research time. Non-refundable, but always preceded by a free discovery call so we’re both confident it’s a good fit.",
     included: [
@@ -40,6 +42,7 @@ const serviceTiers = [
     id: "group-trips",
     title: "Group Trips",
     fee: "6–15 travelers · $150 planning fee",
+    bestFor: "Best for trips where the logistics are bigger than one booking.",
     description:
       "Coordinating a group trip is a different kind of work — room blocks, group dynamics, logistics at scale. This flat fee covers all of it, due before planning begins.",
     included: [
@@ -54,6 +57,7 @@ const serviceTiers = [
     id: "large-corporate",
     title: "Large Groups & Corporate",
     fee: "15+ travelers · Custom quote",
+    bestFor: "Best for retreats, events, and complex multi-stop itineraries.",
     description:
       "For corporate retreats, large events, or complex multi-destination trips, I put together a custom quote based on scope. Starts with a free discovery call.",
     included: [],
@@ -90,6 +94,9 @@ export const ServicesSection = () => {
           <h2 id="services-heading" className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight">
             Simple, transparent.
           </h2>
+          <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-sans max-w-2xl mt-6">
+            Fees depend on how much research and coordination your trip needs. If you know exactly what you want, booking is free.
+          </p>
         </motion.div>
 
         <motion.div
@@ -103,7 +110,7 @@ export const ServicesSection = () => {
               <AccordionItem
                 key={tier.id}
                 value={tier.id}
-                className="bg-background rounded-sm border border-border px-6 md:px-8"
+                className="bg-background rounded-sm border border-border px-6 md:px-8 transition-smooth hover:border-primary/50 data-[state=open]:border-primary data-[state=open]:shadow-soft"
               >
                 <AccordionTrigger className="hover:no-underline py-5">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full pr-4 gap-2">
@@ -117,6 +124,9 @@ export const ServicesSection = () => {
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-5 pb-3">
+                    <p className="text-primary text-sm leading-relaxed font-sans font-medium">
+                      {tier.bestFor}
+                    </p>
                     <p className="text-muted-foreground text-sm leading-relaxed font-sans">
                       {tier.description}
                     </p>

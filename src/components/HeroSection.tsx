@@ -22,13 +22,13 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-3xl"
+          className="max-w-3xl lg:max-w-2xl xl:max-w-3xl"
         >
           <p className="text-xs md:text-sm font-sans font-medium tracking-[0.2em] text-muted-foreground mb-6">
             Samantha Provenza · Travel Designer · Fora Travel · NYC
           </p>
 
-          <h1 id="hero-heading" className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-foreground leading-[0.98] text-balance">
+          <h1 id="hero-heading" className="font-display text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-foreground leading-[0.98] text-balance">
             The right trip. <span className="text-primary">No guesswork.</span>
           </h1>
 
@@ -47,9 +47,18 @@ export const HeroSection = () => {
             </a>
           </div>
 
-          <blockquote className="mt-14 border-l-2 border-primary pl-5 text-lg md:text-xl font-display font-bold text-foreground max-w-xl">
-            “She thinks of everything before you think to ask.”
-          </blockquote>
+          <p className="mt-5 text-sm text-muted-foreground font-sans">
+            Fora advisor perks at 4,500+ hotels and partners.
+          </p>
+
+          <div className="mt-14 max-w-xl border-t border-primary pt-5">
+            <p className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-3">
+              Client note
+            </p>
+            <blockquote className="text-lg md:text-xl font-display font-bold text-foreground">
+              “She thinks of everything before you think to ask.”
+            </blockquote>
+          </div>
         </motion.div>
       </div>
     </section>
