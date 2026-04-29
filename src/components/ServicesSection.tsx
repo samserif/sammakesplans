@@ -7,7 +7,7 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 
-const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
+const intakeUrl = "https://secure.foratravel.com/intake/KXd4bQ64FK";
 
 const serviceTiers = [
   {
