@@ -6,14 +6,17 @@ const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-background overflow-hidden" aria-labelledby="hero-heading">
+    <section
+      className="relative min-h-screen flex items-center bg-background overflow-hidden"
+      aria-labelledby="hero-heading"
+    >
       <video
         src={heroVideo}
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 h-full w-full object-contain object-center opacity-15 mix-blend-multiply md:opacity-12 lg:object-right lg:opacity-10"
+        className="absolute inset-0 h-full w-full object-contain object-center opacity-20 mix-blend-multiply md:opacity-30 lg:object-right lg:opacity-50"
         aria-label="Animated travel planning icons"
       />
       <div className="absolute inset-0 bg-background/70" />
@@ -29,7 +32,10 @@ export const HeroSection = () => {
             Samantha Provenza · Travel Designer · Fora Travel · NYC
           </p>
 
-          <h1 id="hero-heading" className="font-display text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-foreground leading-[0.98] text-balance">
+          <h1
+            id="hero-heading"
+            className="font-display text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-foreground leading-[0.98] text-balance"
+          >
             The right trip. <span className="text-primary">No guesswork.</span>
           </h1>
 
@@ -43,7 +49,10 @@ export const HeroSection = () => {
                 Start Planning →
               </a>
             </Button>
-            <a href="#how-it-works" className="text-sm font-sans font-medium text-foreground hover:text-primary transition-colors">
+            <a
+              href="#how-it-works"
+              className="text-sm font-sans font-medium text-foreground hover:text-primary transition-colors"
+            >
               See how it works ↓
             </a>
           </div>
@@ -53,9 +62,7 @@ export const HeroSection = () => {
           </p>
 
           <div className="mt-14 max-w-xl border-t border-primary pt-5">
-            <p className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-3">
-              Client note
-            </p>
+            <p className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-3">Client note</p>
             <blockquote className="text-lg md:text-xl font-display font-bold text-foreground">
               “She thinks of everything before you think to ask.”
             </blockquote>
