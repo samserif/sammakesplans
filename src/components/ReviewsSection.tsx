@@ -47,6 +47,8 @@ const stats = [
 ];
 
 export const ReviewsSection = () => {
+  const [featuredReview, ...supportingReviews] = reviews;
+
   return (
     <section id="reviews" className="py-24 md:py-32 bg-background" aria-labelledby="reviews-heading" role="region">
       <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
@@ -63,7 +65,7 @@ export const ReviewsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-3 gap-6 md:gap-8 text-center mt-10 mb-14">
+        <div className="grid grid-cols-3 gap-6 md:gap-8 text-center mt-10 mb-16">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -73,7 +75,7 @@ export const ReviewsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="flex flex-col items-center"
             >
-              <span className="text-4xl md:text-5xl font-display font-black text-foreground">
+              <span className="text-4xl md:text-6xl font-display font-black text-foreground">
                 {stat.value}
               </span>
               <div className="w-10 h-1 bg-primary rounded-full mt-3 mb-2" />
@@ -84,8 +86,29 @@ export const ReviewsSection = () => {
           ))}
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.55 }}
+          className="bg-secondary rounded-sm border border-border p-8 md:p-10 mb-6"
+        >
+          <div className="flex gap-0.5 mb-5" aria-label="5 star review">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+            ))}
+          </div>
+          <p className="font-display text-2xl md:text-3xl font-bold leading-tight text-foreground max-w-4xl mb-7">
+            “{featuredReview.quote}”
+          </p>
+          <div>
+            <p className="font-display font-bold text-foreground text-sm">{featuredReview.name}</p>
+            <p className="text-muted-foreground text-xs font-sans">{featuredReview.destination}</p>
+          </div>
+        </motion.div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviews.map((review, index) => (
+          {supportingReviews.map((review, index) => (
             <motion.div
               key={review.name}
               initial={{ opacity: 0, y: 30 }}
