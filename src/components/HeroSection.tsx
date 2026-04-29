@@ -47,9 +47,18 @@ export const HeroSection = () => {
             </a>
           </div>
 
-          <blockquote className="mt-14 border-l-2 border-primary pl-5 text-lg md:text-xl font-display font-bold text-foreground max-w-xl">
-            “She thinks of everything before you think to ask.”
-          </blockquote>
+          <p className="mt-5 text-sm text-muted-foreground font-sans">
+            Fora advisor perks at 4,500+ hotels and partners.
+          </p>
+
+          <div className="mt-14 max-w-xl border-t border-primary pt-5">
+            <p className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-3">
+              Client note
+            </p>
+            <blockquote className="text-lg md:text-xl font-display font-bold text-foreground">
+              “She thinks of everything before you think to ask.”
+            </blockquote>
+          </div>
         </motion.div>
       </div>
     </section>
