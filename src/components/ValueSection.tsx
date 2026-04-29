@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
+const calendarUrl = "https://calendar.app.google/ziozYiHLnjXDsFp37";
 
 const details = [
   "Discovery calls are always free",
@@ -22,18 +23,25 @@ export const ValueSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <span className="text-xs tracking-[0.2em] text-background/60 font-sans font-medium mb-4 block">CTA</span>
+          <span className="text-xs tracking-[0.2em] text-background/60 font-sans font-medium mb-4 block">Ready when you are</span>
           <h2 id="value-heading" className="font-display text-4xl md:text-6xl lg:text-7xl font-black text-background leading-tight">
             Tell me about your trip.
           </h2>
           <p className="text-background/75 text-base md:text-lg leading-relaxed font-sans max-w-2xl mt-7 mb-10">
-            Fill out the intake form and I’ll follow up with a free discovery call. No pressure, no commitment — just a conversation about what you’re planning and whether I’m the right fit.
+            Fill out the intake form or book a free discovery call. No pressure, no commitment — just a conversation about what you’re planning and whether I’m the right fit.
           </p>
-          <Button variant="hero" size="xl" asChild>
-            <a href={intakeUrl} target="_blank" rel="noopener noreferrer">
-              Start the intake form →
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button variant="hero" size="xl" asChild>
+              <a href={intakeUrl} target="_blank" rel="noopener noreferrer">
+                Start the intake form →
+              </a>
+            </Button>
+            <Button variant="hero-outline" size="xl" asChild>
+              <a href={calendarUrl} target="_blank" rel="noopener noreferrer">
+                Book a discovery call →
+              </a>
+            </Button>
+          </div>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 mt-14">
