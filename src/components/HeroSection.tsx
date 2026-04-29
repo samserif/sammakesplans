@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import heroVideo from "@/assets/animated-icons-website.mp4";
 
-const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
+const intakeUrl = "https://secure.foratravel.com/intake/KXd4bQ64FK";
 
 export const HeroSection = () => {
   return (
@@ -60,13 +60,6 @@ export const HeroSection = () => {
           <p className="mt-5 text-sm text-muted-foreground font-sans">
             Fora advisor perks at 4,500+ hotels and partners.
           </p>
-
-          <div className="mt-14 max-w-xl border-t border-primary pt-5">
-            <p className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-3">Client note</p>
-            <blockquote className="text-lg md:text-xl font-display font-bold text-foreground">
-              “She thinks of everything before you think to ask.”
-            </blockquote>
-          </div>
         </motion.div>
       </div>
     </section>
