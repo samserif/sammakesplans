@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import heroVideo from "@/assets/animated-icons-website.mp4";
 
 const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
 
@@ -7,22 +8,23 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-background overflow-hidden" aria-labelledby="hero-heading">
       <video
-        src="/videos/hero.mp4"
+        src={heroVideo}
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-y-0 right-0 hidden lg:block w-1/2 h-full object-cover opacity-35"
-        aria-label="Travel highlights montage"
+        className="absolute inset-0 h-full w-full object-cover opacity-15 mix-blend-multiply md:opacity-20 lg:inset-y-0 lg:left-auto lg:right-0 lg:w-1/2 lg:opacity-100 lg:mix-blend-normal"
+        aria-label="Animated travel planning icons"
       />
-      <div className="absolute inset-y-0 right-0 hidden lg:block w-1/2 bg-secondary/60" />
+      <div className="absolute inset-0 bg-background/70 lg:hidden" />
+      <div className="absolute inset-y-0 right-0 hidden lg:block w-1/2 bg-secondary/20" />
 
       <div className="container relative z-10 mx-auto px-6 lg:px-12 pt-32 pb-20">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-3xl lg:max-w-2xl xl:max-w-3xl"
+          className="max-w-3xl lg:max-w-[48%] xl:max-w-2xl"
         >
           <p className="text-xs md:text-sm font-sans font-medium tracking-[0.2em] text-muted-foreground mb-6">
             Samantha Provenza · Travel Designer · Fora Travel · NYC
