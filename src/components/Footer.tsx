@@ -1,26 +1,12 @@
 import { Instagram } from "lucide-react";
 
-const intakeUrl = "https://www.foratravel.com/intake/KXd4bQ64FK";
-
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 bg-background text-foreground border-t border-border" role="contentinfo">
+    <footer className="py-8 bg-background text-foreground border-t border-border" role="contentinfo">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="mb-12">
-          <span className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium block mb-3">Ready?</span>
-          <a
-            href={intakeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-foreground hover:text-primary transition-colors duration-300"
-          >
-            Start the intake form →
-          </a>
-        </div>
-
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <a href="#" className="font-display text-base font-black text-foreground">
               Samantha Provenza
@@ -32,6 +18,9 @@ export const Footer = () => {
 
           <div className="flex items-center gap-8">
             <nav className="flex items-center gap-6" aria-label="Footer navigation">
+              <a href="#how-it-works" className="text-xs tracking-[0.16em] text-muted-foreground hover:text-primary transition-colors font-sans font-medium">
+                How it works
+              </a>
               <a href="#story" className="text-xs tracking-[0.16em] text-muted-foreground hover:text-primary transition-colors font-sans font-medium">
                 About
               </a>
