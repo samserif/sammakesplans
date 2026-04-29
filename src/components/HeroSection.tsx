@@ -28,10 +28,6 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-3xl lg:max-w-[48%] xl:max-w-2xl"
         >
-          <p className="text-xs md:text-sm font-sans font-medium tracking-[0.2em] text-muted-foreground mb-6">
-            Samantha Provenza · Travel Designer · Fora Travel · NYC
-          </p>
-
           <h1
             id="hero-heading"
             className="font-display text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-foreground leading-[0.98] text-balance"
