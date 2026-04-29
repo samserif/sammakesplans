@@ -40,7 +40,8 @@ export const StatementSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="relative grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0">
+          <div className="hidden lg:block absolute top-10 left-0 right-0 h-px bg-border" aria-hidden="true" />
           {steps.map((step, index) => (
             <motion.div
               key={step.number}
@@ -48,9 +49,10 @@ export const StatementSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="border-t border-primary pt-6"
+              className="relative border-t border-primary pt-6 lg:border-t-0 lg:pr-10"
             >
-              <p className="text-sm font-sans font-medium text-primary mb-5">{step.number}</p>
+              <div className="hidden lg:block absolute top-[2.15rem] left-0 h-3 w-3 rounded-full bg-primary ring-4 ring-background" aria-hidden="true" />
+              <p className="font-display text-4xl font-black text-primary/25 mb-5">{step.number}</p>
               <h3 className="font-display text-xl font-bold text-foreground mb-3">{step.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
             </motion.div>
