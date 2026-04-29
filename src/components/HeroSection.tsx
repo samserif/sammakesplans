@@ -36,7 +36,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mt-8 mb-10 leading-relaxed font-sans">
-            Effortless group travel, handled with care. You focus on the group chat. I’ll handle the rest.
+            Samantha Provenza · Group Travel Designer & Travel Advisor · Fora Travel
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-5">
