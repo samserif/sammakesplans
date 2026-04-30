@@ -52,10 +52,6 @@ export const HeroSection = () => {
               See how it works ↓
             </a>
           </div>
-
-          <p className="mt-5 text-sm text-muted-foreground font-sans">
-            Fora advisor perks at 4,500+ hotels and partners.
-          </p>
         </motion.div>
       </div>
     </section>
