@@ -65,7 +65,7 @@ export const AboutSection = () => {
                 My day job for 15+ years was UX design — figuring out exactly what someone needs before they know they need it, then building an experience that delivers it without friction. It turns out that’s exactly what good travel planning is.
               </p>
               <p>
-                A few years ago I found Fora, and it clicked. I could do this properly, for real clients, with the infrastructure to actually deliver. I’m not someone who pivoted into travel from nowhere. I’m someone who was already doing this — I just finally made it official.
+                A few years ago I found Fora, and it clicked. I could do turn something I loved into a business. I’m not someone who pivoted into travel from nowhere. I’m someone who was already doing this — I just finally made it official.
               </p>
             </div>
           </motion.div>
