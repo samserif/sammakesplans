@@ -25,7 +25,17 @@ export const AboutSection = () => {
               </div>
               <div className="border-t border-primary pt-4">
                 <p className="text-xs font-sans font-medium tracking-[0.18em] text-muted-foreground mb-2">Powered by</p>
-                <p className="text-sm text-foreground leading-relaxed">Fora Travel — preferred partner access, verified rates, and infrastructure for complex bookings.</p>
+                <p className="text-sm text-foreground leading-relaxed">
+                  <a
+                    href="https://www.foratravel.com/advisor/samantha-provenza"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline-offset-4 hover:underline"
+                  >
+                    Fora Travel
+                  </a>{" "}
+                  — preferred partner access, verified rates, and infrastructure for complex bookings.
+                </p>
               </div>
             </div>
           </motion.div>
