@@ -16,7 +16,7 @@ export const AboutSection = () => {
             <img
               src={samHeadshot}
               alt="Samantha Provenza, travel designer"
-              className="w-full max-w-md aspect-[4/5] object-cover object-top rounded-sm"
+              className="w-full max-w-md aspect-square object-cover object-top rounded-full"
             />
             <div className="grid sm:grid-cols-2 gap-4 max-w-md">
               <div className="border-t border-primary pt-4">
