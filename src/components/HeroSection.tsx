@@ -36,7 +36,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mt-8 mb-10 leading-relaxed font-sans">
-            Samantha Provenza · Group Travel Designer & Travel Advisor · Fora Travel
+            Samantha Provenza · Group Travel Designer & Travel Advisor
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-5">
