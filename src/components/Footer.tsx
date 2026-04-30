@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <a href="#" className="font-display text-base font-black text-foreground">
+            <a href="#" className="font-display font-black text-primary text-2xl shadow-inner">
               Samantha Provenza
             </a>
             <p className="text-xs text-muted-foreground mt-1 font-sans">
