@@ -36,7 +36,7 @@ export const Navigation = () => {
       >
         <nav className="container mx-auto px-6 lg:px-12 flex items-center justify-between" aria-label="Main navigation">
           <a href="#" className="flex flex-col leading-none" aria-label="Samantha Provenza - Home">
-            <span className="font-display font-black text-primary text-2xl shadow-inner">SP</span>
+            <span className="font-display font-black text-primary text-2xl shadow-none">SP</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
