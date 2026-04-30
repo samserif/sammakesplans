@@ -111,6 +111,17 @@ export const ReviewsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <div className="mt-8 text-center">
+          <a
+            href="https://www.foratravel.com/advisor/samantha-provenza"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-sans text-primary underline-offset-4 hover:underline"
+          >
+            See all reviews
+          </a>
+        </div>
       </div>
     </section>
   );
