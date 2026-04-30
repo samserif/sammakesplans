@@ -53,19 +53,19 @@ export const AboutSection = () => {
 
             <div className="space-y-5 text-muted-foreground leading-[1.85] text-base font-sans">
               <p>
-                It started with Paris. My first time abroad — junior year of college — and I came home a completely different person. After that, travel stopped being something I did occasionally and became something I organized my life around.
+                It started with Paris. My first time abroad and I came home a completely different person. After that, travel stopped being something I did occasionally and became something I organized my life around.
               </p>
               <p>
-                In 2019, I joined a digital nomad community and spent time living abroad while working remotely. We were a group of 15 to 25 people at any given time, and I became the person everyone turned to when it came to planning weekend trips.
+                In 2019, I joined a digital nomad community and spent time living abroad while working remotely. We were a group of 15 to 25 people at any given time, and my favorite part was organizing elaborate weekend group getaways.
               </p>
               <p>
-                I genuinely loved the puzzle of it — finding the right hotel for a group of 18 with different budgets, the restaurant that could handle a last-minute reservation, the day trip that would feel like the highlight in retrospect. Even when things went sideways, I was the one figuring out the fix.
+                I genuinely loved the puzzle of it — finding the right hotel for a large group  with different budgets, the restaurant that could handle a last-minute reservation, the day trip that would feel like the highlight. Even when things went sideways, I enjoyed the challenge of figuring out the fix.
               </p>
               <p>
                 My day job for 15+ years was UX design — figuring out exactly what someone needs before they know they need it, then building an experience that delivers it without friction. It turns out that’s exactly what good travel planning is.
               </p>
               <p>
-                A few years ago I found Fora, and it clicked. I could do this properly, for real clients, with the infrastructure to actually deliver. I’m not someone who pivoted into travel from nowhere. I’m someone who was already doing this — I just finally made it official.
+                A few years ago I found Fora, and it clicked. I could do turn something I loved into a business. I’m not someone who pivoted into travel from nowhere. I’m someone who was already doing this — I just finally made it official.
               </p>
             </div>
           </motion.div>
