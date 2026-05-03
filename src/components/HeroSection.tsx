@@ -36,8 +36,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mt-8 mb-10 leading-relaxed font-sans">
-            I plan friend trips, milestone celebrations, and group getaways so you can focus on the group chat — not the
-            logistics.
+            I design seamless group getaways and milestone celebrations, so your only job is showing up.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-5">

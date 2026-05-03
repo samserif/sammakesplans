@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <p className="text-xs text-muted-foreground font-sans">
-            © {currentYear} Samantha Provenza. All rights reserved.
+            © {currentYear} Samantha Provenza | Group Trip Designer & Travel Advisor. All rights reserved.
           </p>
 
           <div className="flex items-center gap-5">
