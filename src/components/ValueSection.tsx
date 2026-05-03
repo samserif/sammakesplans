@@ -20,9 +20,6 @@ export const ValueSection = () => {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="text-xs tracking-[0.2em] text-background/60 font-sans font-medium mb-4 block">
-            {"\n"}
-          </span>
           <h2
             id="value-heading"
             className="font-display text-4xl md:text-6xl lg:text-7xl font-black text-background leading-tight"

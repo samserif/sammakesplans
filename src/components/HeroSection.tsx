@@ -32,11 +32,11 @@ export const HeroSection = () => {
             id="hero-heading"
             className="font-display text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-foreground leading-[0.98] text-balance"
           >
-            The right trip. <span className="text-primary">No guesswork.</span>
+            Group travel, <span className="text-primary">designed</span> around you.
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mt-8 mb-10 leading-relaxed font-sans">
-            Samantha Provenza · Group Travel Designer & Travel Advisor
+            I plan friend trips, milestone celebrations, and group getaways so you can focus on the group chat — not the logistics.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-5">
