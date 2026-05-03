@@ -41,9 +41,9 @@ const reviews = [
 ];
 
 const stats = [
-  { value: "40+", label: "Countries traveled first-hand" },
   { value: "50+", label: "Trips designed" },
   { value: "5★", label: "On every Fora review" },
+  { value: "40+", label: "Countries traveled first-hand" },
 ];
 
 export const ReviewsSection = () => {
@@ -57,8 +57,13 @@ export const ReviewsSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-4"
         >
-          <span className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-4 block">Client Reviews</span>
-          <h2 id="reviews-heading" className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight">
+          <span className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-4 block">
+            Client Reviews
+          </span>
+          <h2
+            id="reviews-heading"
+            className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight"
+          >
             In their words.
           </h2>
         </motion.div>
@@ -73,13 +78,9 @@ export const ReviewsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="flex flex-col items-center"
             >
-              <span className="text-4xl md:text-6xl font-display font-black text-foreground">
-                {stat.value}
-              </span>
+              <span className="text-4xl md:text-6xl font-display font-black text-foreground">{stat.value}</span>
               <div className="w-10 h-1 bg-primary rounded-full mt-3 mb-2" />
-              <span className="text-xs md:text-sm text-muted-foreground font-sans max-w-32">
-                {stat.label}
-              </span>
+              <span className="text-xs md:text-sm text-muted-foreground font-sans max-w-32">{stat.label}</span>
             </motion.div>
           ))}
         </div>
@@ -100,9 +101,7 @@ export const ReviewsSection = () => {
                     <Star key={i} className="w-4 h-4 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-foreground text-sm leading-relaxed font-sans mb-6">
-                  “{review.quote}”
-                </p>
+                <p className="text-foreground text-sm leading-relaxed font-sans mb-6">“{review.quote}”</p>
               </div>
               <div>
                 <p className="font-display font-bold text-foreground text-sm">{review.name}</p>
