@@ -42,7 +42,7 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row sm:items-center gap-5">
             <Button variant="hero" size="xl" asChild>
               <a href={intakeUrl} target="_blank" rel="noopener noreferrer">
-                Start Planning →
+                Design my trip →
               </a>
             </Button>
             <a

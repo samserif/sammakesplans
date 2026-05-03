@@ -153,12 +153,7 @@ export const ServicesSection = () => {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.15 }}
           className="mt-12 border-l-2 border-primary pl-5"
-        >
-          <p className="text-sm text-muted-foreground font-sans leading-relaxed">
-            If you already know what you want, I’ll just book it — that part’s on me. The planning fee is for when you
-            need me to dig in.
-          </p>
-        </motion.div>
+        ></motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -169,7 +164,7 @@ export const ServicesSection = () => {
         >
           <Button variant="hero" size="xl" asChild>
             <a href={intakeUrl} target="_blank" rel="noopener noreferrer">
-              Start the intake form →
+              Design my trip →
             </a>
           </Button>
         </motion.div>
