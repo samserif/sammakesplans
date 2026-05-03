@@ -21,13 +21,13 @@ export const ValueSection = () => {
           className="mx-auto max-w-3xl text-center"
         >
           <span className="text-xs tracking-[0.2em] text-background/60 font-sans font-medium mb-4 block">
-            Ready when you are
+            {"\n"}
           </span>
           <h2
             id="value-heading"
             className="font-display text-4xl md:text-6xl lg:text-7xl font-black text-background leading-tight"
           >
-            Tell me about your trip.
+            Ready when you are
           </h2>
           <p className="text-background/75 text-base md:text-lg leading-relaxed font-sans max-w-2xl mx-auto mt-7 mb-10">
             Fill out the intake form and I'll reach out to schedule a free discovery call. No pressure, no commitment — just a conversation about what you’re planning and whether I’m the right fit.
