@@ -43,8 +43,8 @@ const serviceTiers = [
       "Coordinating a group trip is a different kind of work — multiple rooms, different budgets, everyone needing to land in the same place at the same time. A $150 planning fee covers all of it, due before work begins.",
     included: [
       "Everything in Trip Planning, plus",
-      "Multi-room coordiantion",
-      "Group itinerary planning and activity suggestions",
+      "Multi-room coordination",
+      "Itinerary design and activity suggestions",
     ],
   },
   {
