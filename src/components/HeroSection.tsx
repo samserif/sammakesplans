@@ -32,11 +32,12 @@ export const HeroSection = () => {
             id="hero-heading"
             className="font-display text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-foreground leading-[0.98] text-balance"
           >
-            Group travel, <span className="text-primary">designed</span> around you.
+            Group travel, <span className="text-primary">designed for you.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mt-8 mb-10 leading-relaxed font-sans">
-            I plan friend trips, milestone celebrations, and group getaways so you can focus on the group chat — not the logistics.
+            I plan friend trips, milestone celebrations, and group getaways so you can focus on the group chat — not the
+            logistics.
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-5">
