@@ -43,7 +43,7 @@ const reviews = [
 const stats = [
   { value: "40+", label: "Countries traveled first-hand" },
   { value: "50+", label: "Trips designed" },
-  { value: "5★", label: "Across every review on Fora" },
+  { value: "5★", label: "On every Fora review" },
 ];
 
 export const ReviewsSection = () => {
@@ -59,7 +59,7 @@ export const ReviewsSection = () => {
         >
           <span className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-4 block">Client Reviews</span>
           <h2 id="reviews-heading" className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight">
-            What clients say.
+            In their words.
           </h2>
         </motion.div>
 

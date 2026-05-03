@@ -19,7 +19,7 @@ const steps = [
   {
     number: "04",
     title: "Let’s get you booked",
-    description: "Bookings, confirmations, room blocks, and logistics are handled leading up to your trip.",
+    description: "I handle bookings, confirmations, room blocks, and every detail leading up to your trip.",
   },
 ];
 
@@ -36,7 +36,7 @@ export const StatementSection = () => {
         >
           <span className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-4 block">How it works</span>
           <h2 id="process-heading" className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight">
-            How it works.
+            From idea to booked.
           </h2>
         </motion.div>
 

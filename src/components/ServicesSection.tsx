@@ -29,7 +29,7 @@ const serviceTiers = [
     fee: "1–5 travelers · $75 planning fee",
     bestFor: "Best for couples, families, and small groups choosing between options.",
     description:
-      "You need help deciding — comparing hotels, getting recommendations, building an itinerary. The $75 deposit is due before planning begins and covers my research time. Non-refundable, but always preceded by a free discovery call so we’re both confident it’s a good fit.",
+      "You need help deciding — comparing hotels, getting recommendations, building an itinerary. The $75 deposit is due before planning begins and covers my research time. Non-refundable — but we always start with a free discovery call so we both know it’s a fit before you put anything down.",
     included: [
       "Destination consultation and recommendations",
       "Hotel and villa research and comparison",
@@ -92,10 +92,10 @@ export const ServicesSection = () => {
         >
           <span className="text-xs tracking-[0.2em] text-muted-foreground font-sans font-medium mb-4 block">Services & Fees</span>
           <h2 id="services-heading" className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight">
-            Simple, transparent.
+            Pick the level of help you need.
           </h2>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-sans max-w-2xl mt-6">
-            Fees depend on how much research and coordination your trip needs. If you know exactly what you want, booking is free.
+            How I charge depends on what your trip needs. If you already know what you want, booking is free.
           </p>
         </motion.div>
 
@@ -158,7 +158,7 @@ export const ServicesSection = () => {
           className="mt-12 border-l-2 border-primary pl-5"
         >
           <p className="text-sm text-muted-foreground font-sans leading-relaxed">
-            If you already know what you want, it’s free — I just book it and earn commission from the travel partner. The planning deposit is for when you need me to do research.
+            If you already know what you want, I’ll just book it — that part’s on me. The planning fee is for when you need me to dig in.
           </p>
         </motion.div>
 
