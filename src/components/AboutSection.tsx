@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import samHeadshot from "@/assets/sam-headshot.png";
+import samHeadshot from "@/assets/sam-about.jpeg";
 
 export const AboutSection = () => {
   return (
@@ -15,8 +15,8 @@ export const AboutSection = () => {
           >
             <img
               src={samHeadshot}
-              alt="Samantha Provenza, travel designer"
-              className="w-full max-w-md aspect-square object-cover object-top rounded-full"
+              alt="Samantha Provenza in front of the Abu Simbel temples in Egypt"
+              className="w-full max-w-md aspect-[3/4] object-cover object-center rounded-2xl shadow-[8px_8px_0_hsl(var(--primary))]"
             />
             <div className="grid sm:grid-cols-2 gap-4 max-w-md">
               <div className="border-t border-primary pt-4">
