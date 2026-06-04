@@ -18,6 +18,10 @@ const Index = () => {
           content="Effortless group travel, handled with care. Fora Advanced Certified Advisor."
         />
         <link rel="canonical" href="https://sammakesplans.com/" />
+        <meta property="og:title" content="Samantha Provenza | Group Travel Designer" />
+        <meta property="og:description" content="Effortless group travel, handled with care. Fora Advanced Certified Advisor." />
+        <meta property="og:url" content="https://sammakesplans.com/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Navigation />
       <main id="main-content" className="min-h-screen bg-background">

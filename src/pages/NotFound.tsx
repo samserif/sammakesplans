@@ -20,6 +20,7 @@ const NotFound = () => {
         <link rel="canonical" href="https://sammakesplans.com/404" />
         <meta name="robots" content="noindex" />
         <meta property="og:title" content="Page not found | Samantha Provenza" />
+        <meta property="og:description" content="The page you're looking for doesn't exist. Return to Samantha Provenza, travel designer." />
         <meta property="og:url" content="https://sammakesplans.com/404" />
       </Helmet>
       <div className="flex min-h-screen items-center justify-center bg-muted">
