@@ -3,6 +3,12 @@ import { Star } from "lucide-react";
 
 const reviews = [
   {
+    name: "Michael L.",
+    destination: "Saint Lucia",
+    quote:
+      "Working with Sam was an absolute pleasure from start to finish! She planned every detail of our trip with incredible care, attention to detail, making the entire experience completely stress-free. She was genuinely invested in ensuring we had the best possible vacation; which we did! We loved all of her recommendations and reservations! Can't wait to work with her again!",
+  },
+  {
     name: "Megan G.",
     destination: "Group trip · Egypt",
     quote:
