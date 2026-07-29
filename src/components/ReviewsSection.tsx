@@ -9,6 +9,12 @@ const reviews = [
       "Working with Sam was an absolute pleasure from start to finish! She planned every detail of our trip with incredible care, attention to detail, making the entire experience completely stress-free. She was genuinely invested in ensuring we had the best possible vacation; which we did! We loved all of her recommendations and reservations! Can't wait to work with her again!",
   },
   {
+    name: "Sarah K.",
+    destination: "Portugal",
+    quote:
+      "Sam was incredibly helpful and professional in helping us plan our stay in Madeira. The options she whittled down for us all would have been stellar, but her insights helped us settle on a destination that would best suit our needs when we were in a state of decision fatigue with wedding planning. Really looking forward to working with her in the future - only upsides here! Thank you, Sam!",
+  },
+  {
     name: "Megan G.",
     destination: "Group trip · Egypt",
     quote:
