@@ -50,6 +50,12 @@ const reviews = [
     quote:
       "I now plan on using Sam for every trip I take going forward. She found an amazing hotel at a better price than we could find ourselves, then got the hotel to give us extra perks. Couldn’t recommend her more.",
   },
+  {
+    name: "Brittany I.",
+    destination: "Maui",
+    quote:
+      "She was able to secure us any reservations we wanted. She went above and beyond at every hotel we stayed at to have our honeymoon recognized and provide any upgrades and complimentary gifts and food vouchers. She was attentive to our wishlist of things we wanted to do, where we wanted to stay and what we valued most in our hotels. Even when certain things didn’t go according to plan (weather related) she was able to call and make any proper changes to our accommodations to make our honeymoon go off without a hitch. Samantha also paid close attention to our budget and was able to find us activities and hotel stays to help us stay within our means. We will definitely use her again in the future!",
+  },
 ];
 
 const stats = [
